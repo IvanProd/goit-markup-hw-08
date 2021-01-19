@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="./css/fonts.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>WebStudio Портфолио</title>
+</head>
+<body>
+    <div class="portfolio-page">
+        <header class="header">
+        <div class="header__conteiner">
+            <!--логотип-->
+            <a href="./index.html" class="logo">
+                <span class="logo__first-word">Web</span><span class="logo__right">Studio</span>
+            </a>
+            <!--Навигация-->
+            <nav class="navigation">
+                <ul class="navigation__list">
+                   
+                    <li class="navigation__item">
+                        <a href="./index.html" class="navigation__link navigation__link--underline">Студия</a>
+                    </li>
+                   
+                    <li class="navigation__item">
+                        <a href="./portfolio.html" class="navigation__link navigation__link--accent">Портфолио</a>
+                    </li>
+                    
+                    <li class="navigation__item">
+                        <a href="./contacts.htm" class="navigation__link navigation__link--underline">Контакты</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!--ссылки контактов-->
+            <address class="header__address">
+                <a class="header__address-link" href="mail:mail:info@devstudio.com">
+                    <svg class="header__address-icon-envelope">
+                        <use href="./images/icon.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+                <a class="header__address-link header__address-link--margin" href="tel:+380961111111">
+                    <svg class="header__address-icon-phone">
+                        <use href="./images/icon.svg#icon-Vector"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </address>
+        </div>
+        </header>
+        <main class="main-content">
+            <!--блок портфолио с навигацией по ниму-->
+            <section class="portfolio-navigation">
+                <h1 class="visually-hidden">Портфолио</h1>
+                <!--заглавие навигация-->    
+                <ul class="portfolio-navigation__list">
+                    <li class="portfolio-navigation__item">
+                        <button type="button" class="portfolio-navigation__button portfolio-navigation__button--all">Все</button>
+                    </li>
+                    <li class="portfolio-navigation__item">
+                        <button type="button" class="portfolio-navigation__button portfolio-navigation__button--web-site">Веб-сайты</button>
+                    </li>
+                    <li class="portfolio-navigation__item">
+                        <button type="button" class="portfolio-navigation__button portfolio-navigation__button--application">Приложения</button>
+                    </li>
+                    <li class="portfolio-navigation__item">
+                        <button type="button" class="portfolio-navigation__button portfolio-navigation__button--design">Дизайн</button>
+                    </li>
+                    <li class="portfolio-navigation__item">
+                        <button type="button" class="portfolio-navigation__button portfolio-navigation__button--marketing">Маркетинг</button>
+                    </li>
+                </ul>
+                <section class="projects">
+                    <h2 class="visually-hidden">проэкты</h2>
+                    <ul class="projects__list">
+                     
+                        <il class="projects__item">
+                            <a href="" class="projects__card-link"> 
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/technocrak.jpg" alt="открытый ноутбук с изображением веб сайта на экране" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Технокряк это современная площадка распространения 
+                                                коронавируса. Компании используют эту платформу для 
+                                                цифрового шпионажа и атак на защищённые сервера 
+                                                конкурентов.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                            <h3 class="card__head">Технокляк</h3>
+                                            <p class="card__title">Веб-сайты</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </il>
+                    
+                        <il class="projects__item">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/poster.jpg" alt="Баскетболисты в фиолетовой и белой форме борятся за мяч в прыжке" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Culpa aspernatur sed consequatur? Praesentium nam vero 
+                                                dolore perferendis. Placeat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Постер New Orlean vs Golden Star</h3>
+                                        <p class="card__title">Дизайн</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </il>
+                    
+                        <il class="projects__item">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/aplication_restoran.jpg" alt="Стилизированая надпись the seafood restaurant на фоне рыбы " width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Exercitationem, quod. Sed aliquam, distinctio dolore 
+                                                officiis neque commodi optio dicta.
+                                            </p>
+                                        </div>
+                                    </div>  
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Ресторан Seafood</h3>
+                                        <p class="card__title">Приложение</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </il>
+                    
+                        <il class="projects__item ">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/prime_marketing.jpg" alt="Наушники" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Quam fuga beatae porro necessitatibus sit, assumenda nam 
+                                                officiis totam debitis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Проект Prime</h3>
+                                        <p class="card__title">Маркетинг</p>
+                                    </figcaption> 
+                                </figure>
+                            </a>
+                        
+                        </il>
+                    
+                        <il class="projects__item ">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/aplication_boxes.jpg" alt="Две коробки с надписями большая белая и маленькая коричневая" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                                Perspiciatis omnis est laborum ex sit possimus esse 
+                                                assumenda itaque culpa?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Проект Boxes</h3>
+                                        <p class="card__title">Приложение</p>
+                                    </figcaption>
+                                </figure>
+                            </a> 
+                        </il>
+                    
+                        <il class="projects__item ">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/web_site.jpg" alt="Монитор с изображением сайта на котором текст и карта мира" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Optio vel officia sit. Et nulla perspiciatis labore quis. 
+                                                Ea, tenetur.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Inspiration has no Borders</h3>
+                                        <p class="card__title">Веб-сайт</p>
+                                    </figcaption>        
+                                </figure>
+                            </a>
+                        </il>
+                    
+                        <il class="projects__item ">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/edition_design.jpg" alt="открытая книгы с фотографиями и текстом" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Non, quaerat nesciunt. Ullam saepe enim odio voluptate dolor 
+                                                assumenda dolorum!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Издание Limited Edition</h3>
+                                        <p class="card__title">Дизайн</p>
+                                    </figcaption>      
+                                </figure>
+                            </a>
+                        </il>
+                    
+                        <il class="projects__item ">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/lab_marketing.jpg" alt="Белая этикетка с надписью LAB EL TAG на джгутовой нитке" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Sint voluptatum tempora fugiat eaque temporibus, natus 
+                                                molestias tempore commodi impedit?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Проект LAB</h3>
+                                        <p class="card__title">Маркетинг</p>
+                                    </figcaption>  
+                                </figure>
+                            </a>
+                        </il>
+                    
+                        <il class="projects__item ">
+                            <a href="" class="projects__card-link">
+                                <figure class="card">
+                                    <div class="card__thumb">
+                                        <img src="./images/portfolio/aplicanion_growing_buisness.jpg" alt="Ноутбук на рабочем столе с открытым приложением" width="370" height="294">
+                                        <div class="thumb">
+                                            <p class="thumb__text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Ex eaque rem ad aspernatur similique saepe vitae esse 
+                                                cumque quo!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <figcaption class="card__caption">
+                                        <h3 class="card__head">Growing Business</h3>
+                                        <p class="card__title">Приложение</p>
+                                    </figcaption>  
+                                 </figure>
+                            </a>
+                        </il>
+                        
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+        <section class="footer__section">
+            <div class="footer__conteiner">
+
+                <!--ссылки навигации и контактов-->
+                <div class="footer__links-conteiner">
+                    <a href="./index.html" class="logo logo--footer">
+                        <span class="logo__first-word">Web</span><span>Studio</span>
+                    </a>
+                    <address class="footer__address">
+                        <ul class="footer__address__list">
+                            <li class="footer__address-contact">
+                                <a href="https://goo.gl/maps/pXZyXXm4pR66iuyq8" class="footer__location-on-map">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="footer__address-contact">
+                                <a href="mailto:info@example.com" class="footer__contact-link">info@example.com</a>
+                            </li>
+                            <li class="footer__address-contact">
+                                <a href="tel:+380991111111" class="footer__contact-link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <!--соцсетеи-->
+                <div class="social">
+                <p class="social__slogan">присоединяйтесь</p>
+                <ul class="social__connect-list">
+                 
+                    <li class="social__connect-item">
+                        <a href="" class="social__connect-link">
+                            <svg class="social__connect-icon">
+                                <use href="./images/icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                 
+                    <li class="social__connect-item">
+                        <a href="" class="social__connect-link">
+                            <svg class="social__connect-icon">
+                                <use href="./images/icon.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                  
+                    <li class="social__connect-item">
+                        <a href="" class="social__connect-link">
+                            <svg class="social__connect-icon">
+                                <use href="./images/icon.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                  
+                    <li class="social__connect-item">
+                        <a href="" class="social__connect-link">
+                            <svg class="social__connect-icon">
+                                <use href="./images/icon.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+
+                <!--Подписка на рассылку-->
+                <div class="subscribe">
+                    <p class="subscribe__slogan">Подпишитесь на рассылку</p>
+                    <form action="" class="subscribe__form">
+                        
+                            <input type="text" name="foot_email" id="foot_email" class="subscribe__input" placeholder="E-mail">
+                        
+                        <button type="submit" class="subscribe__button">
+                            <span class="subscribe__button-text">Подписаться</span>
+                            <svg class="subscribe__button-icon">
+                                <use href="./images/icon.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </footer>
+    </div>
+</body>
+</html>
