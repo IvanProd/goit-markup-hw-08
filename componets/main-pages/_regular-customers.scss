@@ -1,8 +1,16 @@
 .regular-customers {
     margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .regular-customers__conteiner {
     margin: 0 auto 60px;
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
+    }
+    @media screen and (min-width:768px) {
+        width: 768px;
+    }
 }
 .regular-customers__head {
     font-family: $Roboto;
@@ -13,7 +21,7 @@
     letter-spacing: 0.03em;
 
     color: $heder-color;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         font-size: px;
         line-height: 1.178;
         margin-bottom: 30px;
@@ -23,7 +31,7 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         flex-wrap: wrap;
         margin-left: -30px;
         margin-top: -30px;
@@ -34,6 +42,10 @@
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 2 - 60px);
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 3 - 90px);
+    }
 }
 .regular-customer__link {
     display: flex;
@@ -66,6 +78,10 @@
 
     @media screen and (max-width: 767px) {
         width: 210px;
+        height: 90px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 226px;
         height: 90px;
     }
 }
