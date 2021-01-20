@@ -2,9 +2,10 @@
 .footer {
     background-color: $footer-bgcolor;
 }
+// секция подвал
 .footer__section {
-    max-width: 480px;
-    max-height: 603px;
+    width: 100%;
+
     margin: 0 auto;
     overflow: hidden;
 
@@ -13,7 +14,14 @@
         height: 463px;
     
     }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 252px;
+        margin: 0 auto 0 auto;
+    }
 }
+// контейнер подвала
 .footer__conteiner {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -24,7 +32,17 @@
         padding-left: 76px;
         padding-right: 89px;
     }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+    
+        min-width: 1200px;
+        margin: 0 auto 0 auto;
+        padding: 0;
+    }
 }
+// блок ссылок
 .footer__links-conteiner {
     margin: 0 auto;
 
@@ -32,7 +50,15 @@
 
         margin: 0 0 60px 0;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-right: 70px; 
+    }
 }
+// группа ссылок
 .footer__address {
     margin-top: 20px;
 
@@ -40,10 +66,21 @@
 
         margin: 20px 0 0 0;
     }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
 }
+// список ссылок
 .footer__address__list {
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        list-style: none;
+    }
     
 }
+// элемент списка ссылок
 .footer__address-contact {
     text-align: center;
     font-family: $Roboto;
@@ -60,7 +97,14 @@
         }
         
     }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    }
 }
+// адресси ссылка на гуглмап
 .footer__location-on-map {
     color: $footer-map-color;
     text-decoration: none;
@@ -70,6 +114,7 @@
         outline: none;
     }
 }
+// ссылка на телефон и почту
 .footer__contact-link {
     color: $footer-address-contact;
     text-decoration: none;
@@ -79,6 +124,7 @@
         outline: none;
     }
 }
+// блок соцсетей
 .social {
     width: 206px;
     height: 80px;
@@ -88,7 +134,12 @@
         margin: 0 0 102px auto;
         
     }
+
+    @media screen and (min-width:1200px) {
+        margin: 72px 0 100px 0;
+    }
 }
+// предложение
 .social__slogan {
     font-family: $Roboto;
     font-style: normal;
@@ -99,8 +150,14 @@
     text-transform: uppercase;
     
     color: $footer-map-color;
-    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    
+
 }
+// список иконок соцсетей
 .social__connect-list {
     display: flex;
     align-items: center;
@@ -110,9 +167,11 @@
     list-style: none;
     padding: 0;
 }
+// элементы списка
 .social__connect-item:not(:last-child) {
     margin-right: 10px;
 }
+// ссылка соцсетей
 .social__connect-link {
     display: flex;
     align-items: center;
@@ -133,11 +192,13 @@
         outline: none;
     }
 }
+// иконка соцсети
 .social__connect-icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
 }
+// блок подписатся на рассылку
 .subscribe {
     display: block;
     max-width: 450px;
@@ -147,7 +208,14 @@
     @media screen and (min-width: 768px) {
         margin: 0 auto;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        height: 86px;
+        margin: 72px 0 94px 93px;
+    }
 }
+// призыв
 .subscribe__slogan {
     font-family: $Roboto;
     font-style: normal;
@@ -157,12 +225,24 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    text-align: center;
     color: $subscribe-slogan;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
+// форма подписания
 .subscribe__form {
-text-align: center;
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
+// поле ввода
 .subscribe__input {
     width: 450px;
     height: 50px;
@@ -181,7 +261,12 @@ text-align: center;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         outline: none;
     }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
+// кнопка
 .subscribe__button {
     display: flex;
     align-items: center;
@@ -199,7 +284,12 @@ text-align: center;
 
     box-shadow: 0px 4px 4px $button-shadow-box;
 
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        margin-right: 0;
+    }
 }
+// текст кнопки
 .subscribe__button-text {
     font-family: $Roboto;
     font-style: normal;
@@ -212,6 +302,7 @@ text-align: center;
 
     color: $subscribe-button-text;
 }
+// иконка кнопки
 .subscribe__button-icon {
     width: 24px;
     height: 24px;
