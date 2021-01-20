@@ -4,12 +4,12 @@
 }
 .footer__section {
     max-width: 480px;
-    height: 603px;
+    max-height: 603px;
     margin: 0 auto;
     overflow: hidden;
 
     @media screen and (min-width: 768px){
-        width: 768px;
+        max-width: 768px;
         height: 463px;
     
     }
@@ -17,12 +17,29 @@
 .footer__conteiner {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 76px;
+        padding-right: 89px;
+    }
 }
 .footer__links-conteiner {
     margin: 0 auto;
+
+    @media screen and (min-width:768px) { 
+
+        margin: 0 0 60px 0;
+    }
 }
 .footer__address {
     margin-top: 20px;
+
+    @media screen and (min-width:768px) {
+
+        margin: 20px 0 0 0;
+    }
 }
 .footer__address__list {
     
@@ -36,6 +53,13 @@
     line-height: 1.714;
 
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        
+    }
 }
 .footer__location-on-map {
     color: $footer-map-color;
@@ -59,6 +83,11 @@
     width: 206px;
     height: 80px;
     margin: 60px auto 0;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 0 102px auto;
+        
+    }
 }
 .social__slogan {
     font-family: $Roboto;
@@ -114,6 +143,10 @@
     max-width: 450px;
     height: 156px;
     margin: 60px auto 0;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+    }
 }
 .subscribe__slogan {
     font-family: $Roboto;
