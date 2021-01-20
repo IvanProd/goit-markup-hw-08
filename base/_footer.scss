@@ -1,0 +1,186 @@
+/*подвал*/
+.footer {
+    background-color: $footer-bgcolor;
+}
+.footer__section {
+    max-width: 480px;
+    height: 603px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px){
+        width: 768px;
+        height: 463px;
+    
+    }
+}
+.footer__conteiner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__links-conteiner {
+    margin: 0 auto;
+}
+.footer__address {
+    margin-top: 20px;
+}
+.footer__address__list {
+    
+}
+.footer__address-contact {
+    text-align: center;
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+}
+.footer__location-on-map {
+    color: $footer-map-color;
+    text-decoration: none;
+
+    &:focus {
+        text-decoration: underline;
+        outline: none;
+    }
+}
+.footer__contact-link {
+    color: $footer-address-contact;
+    text-decoration: none;
+
+    &:focus {
+        text-decoration: underline;
+        outline: none;
+    }
+}
+.social {
+    width: 206px;
+    height: 80px;
+    margin: 60px auto 0;
+}
+.social__slogan {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: $footer-map-color;
+    text-align: center;
+}
+.social__connect-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    list-style: none;
+    padding: 0;
+}
+.social__connect-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social__connect-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $logo-text-color-10p;
+    color: $social-icon-color;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,&:hover {
+        border-radius: 50%;
+        background-color: $accent-color;
+        outline: none;
+    }
+}
+.social__connect-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.subscribe {
+    display: block;
+    max-width: 450px;
+    height: 156px;
+    margin: 60px auto 0;
+}
+.subscribe__slogan {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    text-align: center;
+    color: $subscribe-slogan;
+}
+.subscribe__form {
+text-align: center;
+}
+.subscribe__input {
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 16px;
+
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    background-color: transparent;
+    color: $footer-input-user-text;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus{
+        border: 2px solid $accent-color; 
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        outline: none;
+    }
+}
+.subscribe__button {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 29px;
+    padding-right: 28px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: $subscribe-button-color;
+
+    box-shadow: 0px 4px 4px $button-shadow-box;
+
+}
+.subscribe__button-text {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    /* identical to box height, or 187% */
+
+    letter-spacing: 0.06em;
+
+    color: $subscribe-button-text;
+}
+.subscribe__button-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}

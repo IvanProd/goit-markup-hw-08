@@ -1,0 +1,108 @@
+
+/*Шрифты*/
+$Roboto: 'Roboto', sans-serif;
+$Raleway: 'Raleway', sans-serif;
+
+/*общее*/
+$accent-color: #2196F3;
+$change-algorithm: cubic-bezier(0.4, 0, 0.2, 1);
+/*шапка*/
+$logo-color: #000000;
+$logo-accent-color: #2196F3;
+$navigation-color-link: #212121;
+$navigation-color: #212121;
+$contact-link: #757575;
+$border-line: 1px solid #ECECEC;
+
+
+
+/*герой*/
+$hero-background-color: #C4C4C4;
+$hero-text-color: #fff;
+$button-color: #2196F3;
+$button-text-color:#fff;
+
+/*особенности*/
+$bgcolor-feature-icon: #F5F4FA;
+$feature-text-color: #757575;
+$feature-head-color: #212121;
+
+/*чем мы занимаемся*/
+$head-color: #212121;
+$item-bgcolor: #757575;
+$wedo-lable-bgcolor: rgba(47, 48, 58, 0.8);
+$wedo-lable-text: #fff;
+
+/*наша команда*/
+$bgcolor-section-our-team: #F5F4FA;
+$head-color: #212121;
+$card-text: #757575;
+$social-icon: #AFB1B8;
+$social-ico-acent: #fff;
+
+/*постоянные клиенты*/
+$heder-color: #212121;
+$icon-link-color: #AFB1B8;
+
+/*подвал*/
+$footer-bgcolor: #2F303A;
+$logo-footer-color: #fff;
+$footer-map-color: #fff;
+$footer-address-contact: rgba(255, 255, 255, 0.6);
+$logo-text-color-10p: rgba(255, 255, 255, 0.1);
+$social-icon-color: #fff;
+$subscribe-slogan: #fff;
+$subscribe-button-color: #2196F3;
+$subscribe-button-text: #fff;
+$button-shadow-box: rgba(0, 0, 0, 0.15);
+$input-border: rgba(255, 255, 255, 0.3);
+$footer-input-user-text: #fff;
+
+/*ПОРТФОЛИО*/
+/*cссылки навигации*/
+$portfolio-button-bgcolor: #F5F4FA;
+$portfolio-button-bgcolor-active: #2196F3;
+$portfolio-button-text-color: #212121;
+$portfolio-button-text-active-color: #fff;
+
+/*каталог портфолио*/
+$project-card-bgcolor: #fff;
+$project-card-border-color: #EEEEEE;
+$card-head: #212121;
+$card-text: #757575;
+
+/*портфолио*/
+$close-color: rgba(0, 0, 0, 0.1);
+
+/*модальное окно*/
+$backdrop-color: rgba(0, 0, 0, 0.5);
+$modal-background-color: #ffffff;
+$button-close-border-color: rgba(0, 0, 0, 0.1);
+$buttom-close-border-color-focus: #000;
+$button-close-background-color: #ffffff;
+$modal-head-color: #212121;
+
+/*форма модального окна*/
+$text-lable: #757575;
+$modal-form-input-border-color:rgba(33, 33, 33, 0.2);
+$commits-placeholder:rgba(117, 117, 117, 0.5);
+$input-icon-color: #212121;
+$input-focus-icon-color: #2196F3;
+$checkbox-border: #212121;
+$modal-button: #2196F3;
+$modal--button-hover: #188CE8;
+$checkbox-icon-background: #fff;
+
+/*Карточка портфолио*/
+$thumb-text-color: #fff;
+
+$thumb-background-color: rgba(33,150,243,0.9);
+
+
+ul,li,p,figure,h1,h2,h3,p{
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}

@@ -1,0 +1,28 @@
+.logo {
+    color: $logo-color;
+    width: 145px;
+    height: 31px;
+    text-decoration: none;
+
+    margin: 24px 93px 25px 0;
+
+    font-family: $Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    &--footer {
+        display: block;
+        text-align: center;
+        color: $logo-footer-color;
+        margin: 0 auto;
+    }
+    
+}
+.logo__first-word {
+    color: $logo-accent-color;
+}
