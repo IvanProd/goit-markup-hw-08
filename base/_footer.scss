@@ -38,7 +38,7 @@
         justify-content: center;
     
         min-width: 1200px;
-        margin: 0 auto 0 auto;
+        margin: 0 auto;
         padding: 0;
     }
 }
@@ -55,7 +55,7 @@
         margin: 0;
         padding-top: 60px;
         padding-bottom: 60px;
-        margin-right: 70px; 
+        margin-right: 93px; 
     }
 }
 // группа ссылок
@@ -69,7 +69,7 @@
 
     @media screen and (min-width: 1200px) {
         padding: 0;
-        margin: 20px 0 0 0;
+        margin: 20px 70px 0 0;
     }
 }
 // список ссылок
@@ -82,7 +82,6 @@
 }
 // элемент списка ссылок
 .footer__address-contact {
-    text-align: center;
     font-family: $Roboto;
     font-style: normal;
     font-weight: normal;
@@ -91,11 +90,14 @@
 
     letter-spacing: 0.03em;
 
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
     @media screen and (min-width: 768px) {
         &:not(:last-child) {
             margin-bottom: 8px;
-        }
-        
+        }   
     }
 
     @media screen and (min-width: 1200px) {
