@@ -136,7 +136,7 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
   }
@@ -174,7 +174,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__address {
     padding: 0;
-    margin: 20px 70px 0 0;
+    margin: 20px 0 0 0;
   }
 }
 
@@ -323,7 +323,7 @@ ul {
 
 .subscribe {
   display: block;
-  max-width: 450px;
+  width: 450px;
   height: 156px;
   margin: 60px auto 0;
 }
