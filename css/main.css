@@ -451,6 +451,133 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
+  .features {
+    margin: 60px auto 60px auto;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features__conteiner {
+  margin: 0 auto 0 auto;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.features__item {
+  width: 450px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    margin: 0;
+    width: 768px;
+    -ms-flex-preferred-size: calc(100% / 2 - 60px);
+        flex-basis: calc(100% / 2 - 60px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.features__icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+}
+
+@media screen and (min-width: 768px) {
+  .features__icon-box {
+    width: 354px;
+  }
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__item-head {
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .features__item-head {
+    text-align: center;
+  }
+}
+
+.features__item-text {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
   .we-are-doing {
     display: none;
   }
