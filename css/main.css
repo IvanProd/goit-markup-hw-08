@@ -323,7 +323,7 @@ ul {
 
 .subscribe {
   display: block;
-  width: 450px;
+  max-width: 450px;
   height: 156px;
   margin: 60px auto 0;
 }
@@ -336,7 +336,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .subscribe {
-    width: 570px;
+    max-width: 570px;
     height: 86px;
     margin: 72px 0 94px 93px;
   }
@@ -448,8 +448,42 @@ ul {
   margin-left: 10px;
 }
 
-.backdrop {
-  display: none;
+.our-team__card-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.our-team__card-specialty {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-team__social-link {
+  width: 44px;
+}
+
+.our-team__social-icon {
+  width: 44px;
+  height: 44px;
 }
 
 .regular-customers {
@@ -657,5 +691,9 @@ ul {
 .regular-customers__icon--logo-6 {
   width: 89px;
   height: 46px;
+}
+
+.backdrop {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

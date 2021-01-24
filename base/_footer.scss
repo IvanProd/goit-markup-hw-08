@@ -203,7 +203,7 @@
 // блок подписатся на рассылку
 .subscribe {
     display: block;
-    width: 450px;
+    max-width: 450px;
     height: 156px;
     margin: 60px auto 0;
 
@@ -212,7 +212,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 570px;
+        max-width: 570px;
         height: 86px;
         margin: 72px 0 94px 93px;
     }
