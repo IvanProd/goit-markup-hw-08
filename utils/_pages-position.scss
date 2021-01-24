@@ -1,11 +1,7 @@
 .main-page{
-    @media screen and (max-width: 480px) {
-        max-width: 480px;
         margin: 0 auto;
-        
-    }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         max-width: 1199px;
         margin: 0 auto;
     }

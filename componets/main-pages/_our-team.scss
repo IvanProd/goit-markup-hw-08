@@ -2,22 +2,49 @@
     background-color: $bgcolor-section-our-team;
 }
 .our-team__conteiner {
-    max-width: 1600px;
-    min-height: 708px;
-    margin: 94px auto 0 auto;
-    padding-top: 94px;
+    margin: 0 auto;
+    padding: 60px 0 60px;
 }
 .our-team__head {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.178;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $head-color;
+    margin-bottom: 30px;
 }
 .our-team__list {
+    width: 450px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
 }
 
 //карточка
 .our-team__item {
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+
+    }
 }
 .our-team__card {
+    width: 450px;
+    height: 622px;
+    margin: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .our-team__card-caption {
+    padding-top: 30px;
 }
 .our-team__card-title {
     font-family: $Roboto;
@@ -41,17 +68,55 @@
 
     text-align: center;
     letter-spacing: 0.03em;
-    color: ;
+    color: $card-text;
+
+    margin-top: 10px;
 }
 .our-team__social-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 44px;
+    margin: 16px auto 24px auto;
+    list-style: none;
+    padding: 0;
 }
 .our-team__social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
 }
 .our-team__social-link {
     width: 44px;
+    height: 44px;
+    padding: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+    color: $social-icon;
+
+    transition-property: background-color,color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,&:focus {
+        background-color: $accent-color;
+        border-radius: 50%;
+        color: $social-ico-acent;
+
+        transition-property: background-color,color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+        outline: none;
+    }
 }
 .our-team__social-icon {
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
