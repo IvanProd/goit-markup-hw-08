@@ -1,13 +1,13 @@
 .main-page{
         margin: 0 auto;
+        overflow: hidden;
 
-    @media screen and (min-width: 768px) {
-        max-width: 1199px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 0 auto;
     }
 
     @media screen and (min-width: 1200px) {
         margin: 0 auto 0 auto;
-        overflow: hidden;
+
     }
 }

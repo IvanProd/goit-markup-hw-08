@@ -3,7 +3,21 @@
 }
 .our-team__conteiner {
     margin: 0 auto;
-    padding: 60px 0 60px;
+    @media screen and (max-width: 1199px) {
+        padding: 60px 15px 60px;
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px){
+        max-width: 1600px;
+        min-height: 708px;
+        margin: 94px auto 0 auto;
+        padding-top: 94px;
+    }
 }
 .our-team__head {
     font-family: $Roboto;
@@ -18,6 +32,14 @@
 
     color: $head-color;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 auto ;
+
+        font-size: 36px;
+        line-height: 1.166;
+
+    }
 }
 .our-team__list {
     width: 450px;
@@ -25,14 +47,46 @@
     padding: 0;
     list-style: none;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        width: 768px;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+        /*outline: 1px solid tomato;*/
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 1200px;
+        margin: 0 auto 0;
+        margin-top: 50px;
+        padding: 0;
+        list-style: none;
+    
+        display: flex;
+        justify-content: center;
+    }
 }
 
 //карточка
 .our-team__item {
+    @media screen and (max-width:767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        } 
+    }
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
 
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        flex-basis: calc(100% / 2 - 60px);
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px; 
+        }
     }
 }
 .our-team__card {
@@ -42,6 +96,16 @@
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+        height: 536px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 428px;
+    }
 }
 .our-team__card-caption {
     padding-top: 30px;
@@ -96,7 +160,7 @@
     padding: 12px;
     background-color: transparent;
     border-radius: 50%;
-    /* margin-right: 10px; */
+
     color: $social-icon;
 
     transition-property: background-color,color;
