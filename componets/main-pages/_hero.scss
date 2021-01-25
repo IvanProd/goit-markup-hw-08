@@ -4,6 +4,10 @@
     min-height: 400px;
     margin: 0 auto 0 auto;
 
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+    }
+
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
         min-height: 600px;
@@ -97,10 +101,14 @@
     color: $hero-text-color;
 
     @media screen and (min-width: 1200px) {
-        width: 696;
+        width: 696px;
         min-height: 120px;
+
+        font-weight: 900;
         font-size: 44px;
         line-height: 1.363;
+        letter-spacing: 0.06em;
+
     }
 }
 // кнопка для формы
