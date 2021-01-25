@@ -1,3 +1,4 @@
+// секция клиентов
 .regular-customers {
     margin-top: 60px;
     margin-left: auto;
@@ -10,6 +11,7 @@
         margin-right: auto;
     }
 }
+// контейнер секции клиентов
 .regular-customers__conteiner {
     margin: 0 auto 60px;
     @media screen and (max-width: 767px) {
@@ -23,6 +25,7 @@
         min-width: 1200px;
     }
 }
+// шапка секции
 .regular-customers__head {
     font-family: $Roboto;
     font-style: normal;
@@ -43,6 +46,7 @@
         margin-bottom: 50px;
     }
 }
+// список клиентов
 .regular-customers__list {
     display: flex;
     justify-content: center;
@@ -57,6 +61,7 @@
     }
     
 }
+// элементы списка клиентов
 .regular-customers__item {
     margin-left: 30px;
     margin-top: 30px;
@@ -76,6 +81,7 @@
         }
     }
 }
+// ссылки на клиентов
 .regular-customer__link {
     display: flex;
     align-items: center;
@@ -118,6 +124,7 @@
         height: 90px;
     }
 }
+// иконка логотип клиентов
 .regular-customers__icon {
     fill: currentColor;
 

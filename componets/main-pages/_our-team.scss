@@ -1,6 +1,8 @@
+// секция наша команда
 .our-team {
     background-color: $bgcolor-section-our-team;
 }
+// контейнер наша команда
 .our-team__conteiner {
     margin: 0 auto;
     @media screen and (max-width: 1199px) {
@@ -19,6 +21,7 @@
         padding-top: 94px;
     }
 }
+// оглавление секции наша команда
 .our-team__head {
     font-family: $Roboto;
     font-style: normal;
@@ -41,6 +44,7 @@
 
     }
 }
+// список наша команда
 .our-team__list {
     width: 450px;
     margin: 0 auto;
@@ -67,8 +71,7 @@
         justify-content: center;
     }
 }
-
-//карточка
+// элемент списка наша команда
 .our-team__item {
     @media screen and (max-width:767px) {
         &:not(:last-child) {
@@ -89,6 +92,7 @@
         }
     }
 }
+//карточка
 .our-team__card {
     width: 450px;
     height: 622px;
@@ -107,6 +111,7 @@
         height: 428px;
     }
 }
+
 .our-team__card-caption {
     padding-top: 30px;
 }
@@ -136,6 +141,7 @@
 
     margin-top: 10px;
 }
+// список соцсетей
 .our-team__social-list {
     display: flex;
     align-items: center;
@@ -146,6 +152,7 @@
     list-style: none;
     padding: 0;
 }
+// элемент списка соцсетей
 .our-team__social-item {
     display: flex;
     align-items: center;
@@ -154,6 +161,7 @@
     height: 44px;
     margin-right: 10px;
 }
+// ссылка соцсетей
 .our-team__social-link {
     width: 44px;
     height: 44px;
@@ -179,6 +187,7 @@
         outline: none;
     }
 }
+// иконка соц сетей
 .our-team__social-icon {
     width: 20px;
     height: 20px;

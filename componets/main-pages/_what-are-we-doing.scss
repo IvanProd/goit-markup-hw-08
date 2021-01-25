@@ -1,3 +1,4 @@
+// секция чем мы занимаемся
 .we-are-doing {
     max-width: 1600px;
     min-height: 386px;
@@ -6,10 +7,12 @@
         display: none;
     }
 }
+// контейнер секции
 .we-are-doing__conteiner {
     width: 1200px;
     margin: 0 auto 0 auto;
 }
+// шапка секции
 .we-are-doing__header {
     font-family: $Roboto;
     font-style: normal;
@@ -24,6 +27,7 @@
 
     margin: 0;
 }
+// список
 .we-are-doing__list {
     display: flex;
     max-width: 1170px;
@@ -32,6 +36,7 @@
     margin: 50px auto 0 auto;
     padding: 0;
 }
+// элементы списка
 .we-are-doing__item {
     position: relative;
 
@@ -40,6 +45,7 @@
     }
 
 }
+// пометка эдемента
 .we-are-doing__item-lable {
     position: absolute;
     bottom: 0;
@@ -51,6 +57,7 @@
     height: 70px;
     background-color: $wedo-lable-bgcolor;
 }
+// текст пометки элемента
 .we-are-doing___item-lable-text {
     margin: 0;
 

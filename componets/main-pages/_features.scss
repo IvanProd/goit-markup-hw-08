@@ -1,3 +1,4 @@
+//секция особенности
 .features {
     margin: 0 auto;
     @media screen and (max-width: 1199px) {
@@ -9,7 +10,7 @@
         margin: 94px auto 0 auto;
     }
 }
-
+//скрытие элемента
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -23,6 +24,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+// контейнер особенности
 .features__conteiner {
     margin: 0 auto 0 auto;
     padding: 0;
@@ -39,6 +41,7 @@
         outline: 1sx solid green;
     }
 }
+// список особенностей
 .features__list {
     list-style: none;
     padding: 0;
@@ -62,6 +65,7 @@
         /*outline: 1px solid steelblue;*/
     }
 }
+// элементы списка особенностей
 .features__item {
     width: 450px;
     margin: 0 auto;
@@ -70,8 +74,6 @@
             margin-bottom: 30px;
         }
     }
-
-
     @media screen and (min-width:768px) and (max-width: 1199px) {
         margin: 0;
         width: 354px;
@@ -87,6 +89,7 @@
         }
     }
 }
+// блок иконос особенностей
 .features__icon-box {
     display: flex;
     align-items: center;
@@ -105,10 +108,12 @@
         width: 270px;
     }
 }
+// иконка особенностей
 .features__icon {
     width: 70px;
     height: 70px;
 }
+// оглавление элемента списка
 .features__item-head {
     margin-top: 30px;
 
@@ -126,6 +131,7 @@
         text-align: center;
     }
 }
+// описание элементов
 .features__item-text {
     margin-top: 10px;
 
