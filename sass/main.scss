@@ -11,6 +11,10 @@
 
 
 //main-page
+@import '../base/header';
+@import '../base/logo';
+@import '../base/navigation';
+@import '../base/burger-menu';
 @import '../componets/main-pages/hero';
 @import '../componets/main-pages/features';
 @import '../componets/main-pages/what-are-we-doing';
@@ -19,3 +23,5 @@
 @import '../componets/main-pages/modal-window';
 
 //portfolio
+@import '../componets/portfolio/portfolio-project-navigation';
+@import '../componets/portfolio/projects';

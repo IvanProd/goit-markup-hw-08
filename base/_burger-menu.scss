@@ -1,0 +1,47 @@
+.menu {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        width: 450px;
+        height: 453px;
+        background-color: #ECECEC;
+        transform: translateY(10%);
+    }
+    
+    
+    
+    
+    
+
+
+
+}
+
+
+.menu-button {
+    display: inline-flex;
+    border: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+    background-color: transparent;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+.menu-button__icon {
+    width: 40px;
+    height: 40px;
+}
+.open-menu {
+    .menu-button.is-open & {
+        display: none;
+    }
+}
+.close-menu {
+    .menu-button & {
+        display: none;
+    }
+    .menu-button.is-open & {
+        display: block;
+    }
+}

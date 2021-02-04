@@ -1,0 +1,206 @@
+.projects {
+    margin-top: 40px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.projects__list {
+    font-family: $Roboto;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 768px;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        width: 1200px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+}
+.projects__item {
+    margin: 30px 0 0 0;
+    padding: 0;
+
+
+
+    @media screen and (max-width: 767px) {
+            flex-basis: calc(100% / 2 - 15px);
+            padding-left: 30px;
+            margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px){
+        flex-basis: calc(100% / 2 - 30px);
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 30px);
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+}
+.projects__card-link {
+    text-decoration: none;
+
+    &:focus {
+        display: block;
+        width: 450px;
+        height: 404px;  
+        /*outline: 2px solid black;*/
+        background-color: #FFFFFF;
+        /*border: 1px solid #EEEEEE;*/
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                    0px 4px 4px rgba(0, 0, 0, 0.06), 
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:focus .thumb {
+        position: absolute;
+        /*top: 0;*/
+        transform: translateY(-100%);
+        transition: transform 250ms;
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (min-width:768px) {
+        width: 354px;
+        height: 404px;
+    }
+    @media screen and (min-width: 1200px) {
+
+        &:focus {
+            display: block;
+            width: 370px;
+            height: 404px;  
+            /*outline: 2px solid black;*/
+            background-color: #FFFFFF;
+            /*border: 1px solid #EEEEEE;*/
+            box-sizing: border-box;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                        0px 4px 4px rgba(0, 0, 0, 0.06), 
+                        1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        &:focus .thumb {
+            position: absolute;
+            /*top: 0;*/
+            transform: translateY(-100%);
+            transition: transform 250ms;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.card {
+    width: 450px;
+    height: 404px;
+    background-color: $project-card-bgcolor;
+    border: 1px solid $project-card-border-color;
+    box-sizing: border-box;
+
+    &:hover {
+        display: block;
+        width: 450px;
+        height: 404px; 
+    
+        background-color: $project-card-bgcolor;
+        /*border: 1px solid #EEEEEE;*/
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                    0px 4px 4px rgba(0, 0, 0, 0.06), 
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    @media screen and (min-width: 768px){
+        width: 354px;
+        height: 404px;
+    
+        &:hover {
+            display: block;
+            width: 354px;
+            height: 404px; 
+        }
+    }
+    @media screen and (min-width: 1200px){
+        width: 370px;
+        height: 404px;
+    
+        &:hover {
+            display: block;
+            width: 370px;
+            height: 404px; 
+        }
+    }
+}
+.card__thumb {
+    position: relative;
+    
+    overflow: hidden;
+
+    &:hover>.thumb {
+        position: absolute;
+        /*top: 0;*/
+        transform: translateY(-100%);
+        transition: transform 250ms;
+        width: 100%;
+        height: 100%;    
+    }
+}
+.thumb {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    transition: transform 250ms;
+
+    cursor: default;
+    background-color: $thumb-background-color;
+}
+.thumb__text {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+
+    color: $thumb-text-color;
+}
+.card__caption {
+    width: 322px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+.card__head {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: $card-head;
+}
+.card__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    color: $card-text;
+}

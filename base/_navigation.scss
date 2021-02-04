@@ -1,0 +1,41 @@
+.navigation {
+}
+.navigation__list {
+    /*display: none;*/
+
+    width: 294px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    @media screen and (max-width:767px) {   
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.02em;
+    }
+}
+.navigation__item {
+}
+.navigation__link {
+
+}
+.navigation__link--underline {
+}
+.navigation__link--accent {
+}
+.header__address {
+    /*display: none;*/
+}
+.header__address-link {
+}
+.header__address-icon-envelope {
+}
+.header__address-link--margin {
+}
+.header__address-icon-phone {
+}

@@ -12,46 +12,55 @@
 </head>
 <body>
     <div class="portfolio-page">
+        <!--Шапка-->
         <header class="header">
-        <div class="header__conteiner">
-            <!--логотип-->
-            <a href="./index.html" class="logo">
-                <span class="logo__first-word">Web</span><span class="logo__right">Studio</span>
-            </a>
-            <!--Навигация-->
-            <nav class="navigation">
-                <ul class="navigation__list">
-                   
-                    <li class="navigation__item">
-                        <a href="./index.html" class="navigation__link navigation__link--underline">Студия</a>
-                    </li>
-                   
-                    <li class="navigation__item">
-                        <a href="./portfolio.html" class="navigation__link navigation__link--accent">Портфолио</a>
-                    </li>
+            <div class="header__conteiner">
+                <!-- логотип -->
+                <a href="./index.html" alt="Логотип WebStudio" class="logo">
+                    <span class="logo__first-word">Web</span><span>Studio</span>
+                </a>
+                <button  type="button" class="menu-button" data-menu-button>
+                    <svg width="40" height="40">
+                        <use href="./images/icon.svg#icon-menu_O" class="open-menu"></use>
+                        <use href="./images/icon.svg#icon-close_O" class="close-menu"></use>
+                    </svg>
+                </button>
+                <!-- Навигация -->
+                <div class="menu">
+                    <nav class="navigation">
+                        <ul class="navigation__list">
                     
-                    <li class="navigation__item">
-                        <a href="./contacts.htm" class="navigation__link navigation__link--underline">Контакты</a>
-                    </li>
-
-                </ul>
-            </nav>
-            <!--ссылки контактов-->
-            <address class="header__address">
-                <a class="header__address-link" href="mail:mail:info@devstudio.com">
-                    <svg class="header__address-icon-envelope">
-                        <use href="./images/icon.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-                <a class="header__address-link header__address-link--margin" href="tel:+380961111111">
-                    <svg class="header__address-icon-phone">
-                        <use href="./images/icon.svg#icon-Vector"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </address>
-        </div>
+                             <li class="navigation__item">
+                                 <a href="./index.html" alt="Глваная" class="navigation__link navigation__link--accent ">Студия</a>
+                             </li>
+                        
+                             <li class="navigation__item">
+                                <a href="./portfolio.html" alt="Портфолио" class="navigation__link navigation__link--underline">Портфолио</a>
+                            </li>
+    
+                            <li class="navigation__item">
+                                <a href="./contacts.htm" alt="Контакты" class="navigation__link navigation__link--underline">Контакты</a>
+                            </li>
+    
+                        </ul> 
+                    </nav>
+                    <!-- ссылки контактов -->
+                    <address class="header__address"> 
+                        <a class="header__address-link" alt="Почта" href="mail:mail:info@devstudio.com">
+                            <svg class="header__address-icon-envelope">
+                                <use href="./images/icon.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                        <a class="header__address-link header__address-link--margin" alt="телефон" href="tel:+380961111111">
+                            <svg class="header__address-icon-phone">
+                                <use href="./images/icon.svg#icon-Vector"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </address>
+                </div>
+            </div>
         </header>
         <main class="main-content">
             <!--блок портфолио с навигацией по ниму-->
@@ -83,16 +92,16 @@
                             <a href="" class="projects__card-link"> 
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/technocrak.jpg 1x,
+                                                            ./images/portfolio/desktop/technocrak-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/technocrak-t1x.jpg 1x,
+                                                            ./images/portfolio/table/technocrak-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/technocrak-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/technocrak-2х.jpg 2x" media="(min-width: 480px)">
+                                        </picture>
+                                        <img src="./images/portfolio/mobile/technocrak-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
                                         
-                                        srcset="./images/portfolio/mobile/technocrak-2х.jpg 2x, 
-                                                ./images/portfolio/table/technocrak-t1х.jpg 1x,
-                                                ./images/portfolio/table/technocrak-t2х.jpg 2x,
-                                                ./images/portfolio/desktop/technocrak-1х.jpg 1x,
-                                                ./images/portfolio/desktop/technocrak-2х.jpg 2x
-                                                " 
-                                        
-                                                src="./images/portfolio/mobile/technocrak-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Технокряк это современная площадка распространения 
@@ -114,14 +123,16 @@
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/poster-2х.jpg 2x, 
-                                        ./images/portfolio/table/poster-t1х.jpg 1x,
-                                        ./images/portfolio/table/poster-t2х.jpg 2x,
-                                        ./images/portfolio/desktop/poster-1х.jpg 1x,
-                                        ./images/portfolio/desktop/poster-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/poster-1х.jpg" alt="Баскетболисты в фиолетовой и белой форме борятся за мяч в прыжке" width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/poster.jpg 1x,
+                                                            ./images/portfolio/desktop/poster-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/poster-t1x.jpg 1x,
+                                                            ./images/portfolio/table/poster-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/poster-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/poster-2х.jpg 2x" media="(min-width: 480px)">
+                                        </picture>
+                                        <img src="./images/portfolio/mobile/poster-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                       
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -142,14 +153,16 @@
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/aplication_restoran-2х.jpg 2x, 
-                                        ./images/portfolio/table/aplication_restoran-t1х.jpg 1x,
-                                        ./images/portfolio/table/aplication_restoran-t2х.jpg 2x,
-                                        ./images/portfolio/desktop/aplication_restoran-1х.jpg 1x,
-                                        ./images/portfolio/desktop/aplication_restoran-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/aplication_restoran-1х.jpg" alt="Стилизированая надпись the seafood restaurant на фоне рыбы " width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/aplication_restoran.jpg 1x,
+                                                            ./images/portfolio/desktop/aplication_restoran-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/aplication_restoran-t1x.jpg 1x,
+                                                            ./images/portfolio/table/aplication_restoran-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/aplication_restoran-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/aplication_restoran-2х.jpg 2x" media="(min-width: 480px)">
+                                         </picture>
+                                        <img src="./images/portfolio/mobile/aplication_restoran-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                        
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -170,14 +183,16 @@
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/poster-2х.jpg 2x, 
-                                        ./images/portfolio/table/poster-t1х.jpg 1x,
-                                        ./images/portfolio/table/poster-t2х.jpg 2x,
-                                        ./images/portfolio/desktop/poster-1х.jpg 1x,
-                                        ./images/portfolio/desktop/poster-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/prime_marketing-1х.jpg" alt="Наушники" width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/prime_marketing.jpg 1x,
+                                                            ./images/portfolio/desktop/prime_marketing-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/prime_marketing-t1x.jpg 1x,
+                                                            ./images/portfolio/table/prime_marketing-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/prime_marketing-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/prime_marketing-2х.jpg 2x" media="(min-width: 480px)">
+                                        </picture>
+                                        <img src="./images/portfolio/mobile/prime_marketing-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                       
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -192,21 +207,22 @@
                                     </figcaption> 
                                 </figure>
                             </a>
-                        
                         </il>
                     
                         <il class="projects__item ">
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/aplication_boxes@2х.jpg 2x, 
-                                        ./images/portfolio/table/aplication_boxes-t1х.jpg 1x,
-                                        ./images/portfolio/table/aplication_boxes-t2х.jpg 2x,
-                                        ./images/portfolio/desktop/aplication_boxes-1х.jpg 1x,
-                                        ./images/portfolio/desktop/aplication_boxes-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/aplication_boxes@1х.jpg" alt="Две коробки с надписями большая белая и маленькая коричневая" width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/aplication_boxes.jpg 1x,
+                                                            ./images/portfolio/desktop/aplication_boxes-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/aplication_boxes-t1x.jpg 1x,
+                                                            ./images/portfolio/table/aplication_boxes-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/aplication_boxes@1х.jpg 1x,
+                                                            ./images/portfolio/mobile/aplication_boxes@2х.jpg 2x" media="(min-width: 480px)">
+                                        </picture>
+                                        <img src="./images/portfolio/mobile/aplication_boxes@1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                       
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -227,14 +243,16 @@
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/web_site-2х.jpg 2x, 
-                                        ./images/portfolio/table/web_site-t1х.jpg 1x,
-                                        ./images/portfolio/table/web_site-t2х.jpg 2x,
-                                        ./images/portfolio/desktop/web_site-1х.jpg 1x,
-                                        ./images/portfolio/desktop/web_site-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/web_site-1х.jpg" alt="Монитор с изображением сайта на котором текст и карта мира" width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/web_site.jpg 1x,
+                                                            ./images/portfolio/desktop/web_site-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/web_site-t1x.jpg 1x,
+                                                            ./images/portfolio/table/web_site-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/web_site-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/web_site-2х.jpg 2x" media="(min-width: 480px)">
+                                        </picture>
+                                        <img src="./images/portfolio/mobile/web_site-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                        
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -255,14 +273,16 @@
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/edition_design-2х.jpg 2x, 
-                                        ./images/portfolio/table/edition_design-t1х.jpg 1x,
-                                        ./images/portfolio/table/edition_design-t2х.jpg 2x,
-                                        ./images/portfolio/desktop/edition_design-1х.jpg 1x,
-                                        ./images/portfolio/desktop/edition_design-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/edition_design-1х.jpg" alt="открытая книгы с фотографиями и текстом" width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/edition_design.jpg 1x,
+                                                            ./images/portfolio/desktop/edition_design-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/edition_design-t1x.jpg 1x,
+                                                            ./images/portfolio/table/edition_design-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/edition_design-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/edition_design-2х.jpg 2x" media="(min-width: 480px)">
+                                         </picture>
+                                        <img src="./images/portfolio/mobile/edition_design-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                        
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -283,14 +303,16 @@
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/lab_marketing-2х.jpg 2x,  
-                                        ./images/portfolio/table/lab_marketing-t1х.jpg 1x, 
-                                        ./images/portfolio/table/lab_marketing-t2х.jpg 2x, 
-                                        ./images/portfolio/desktop/lab_marketing-1х.jpg 1x, 
-                                        ./images/portfolio/desktop/lab_marketing-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/lab_marketing-1х.jpg" alt="Белая этикетка с надписью LAB EL TAG на джгутовой нитке" width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/lab_marketing.jpg 1x,
+                                                            ./images/portfolio/desktop/lab_marketing-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/lab_marketing-t1x.jpg 1x,
+                                                            ./images/portfolio/table/lab_marketing-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/lab_marketing-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/lab_marketing-2х.jpg 2x" media="(min-width: 480px)">
+                                         </picture>
+                                        <img src="./images/portfolio/mobile/lab_marketing-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                        
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -311,14 +333,16 @@
                             <a href="" class="projects__card-link">
                                 <figure class="card">
                                     <div class="card__thumb">
-                                        <img 
-                                        srcset="./images/portfolio/mobile/aplication_growing_buisness-2х.jpg 2x, 
-                                        ./images/portfolio/table/aplication_growing_buisness-t1х.jpg 1x,
-                                        ./images/portfolio/table/aplication_growing_buisness-t2х.jpg 2x,
-                                        ./images/portfolio/desktop/aplication_growing_buisness-1х.jpg 1x,
-                                        ./images/portfolio/desktop/aplication_growing_buisness-2х.jpg 2x
-                                        "
-                                        src="./images/portfolio/mobile/aplication_growing_buisness-1х.jpg" alt="Ноутбук на рабочем столе с открытым приложением" width="370" height="294">
+                                        <picture>
+                                            <sourse srcset="./images/portfolio/desktop/aplication_growing_buisness.jpg 1x,
+                                                            ./images/portfolio/desktop/aplication_growing_busness-d2x.jpg 2x" media="(min-width: 1200px)">
+                                            <sourse srcset="./images/portfolio/table/aplication_growing_buisness-t1x.jpg 1x,
+                                                            ./images/portfolio/table/aplication_growing_buisness-t2x.jpg 2x" media="(min-width: 768px)">
+                                            <sourse srcset="./images/portfolio/mobile/aplication_growing_buisness-1х.jpg 1x,
+                                                            ./images/portfolio/mobile/aplication_growing_buisness-2х.jpg 2x" media="(min-width: 480px)">
+                                        </picture>
+                                        <img src="./images/portfolio/mobile/aplication_growing_buisness-1х.jpg" alt="открытый ноутбук с изображением веб сайта на экране">
+                                        
                                         <div class="thumb">
                                             <p class="thumb__text">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -421,5 +445,6 @@
         </section>
         </footer>
     </div>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

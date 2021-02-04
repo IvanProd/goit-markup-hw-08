@@ -13,47 +13,55 @@
 <body>
     <div class="main-page">
         <!--Шапка-->
-        <!-- <header class="header"> -->
-            <!-- <div class="header__conteiner"> -->
-                логотип
-                <!-- <a href="./index.html" alt="Логотип WebStudio" class="logo"> -->
-                    <!-- <span class="logo__first-word">Web</span><span>Studio</span> -->
-                <!-- </a> -->
-                Навигация
-                <!-- <nav class="navigation"> -->
-                    <!-- <ul class="navigation__list"> -->
-                    <!--  -->
-                        <!-- <li class="navigation__item"> -->
-                            <!-- <a href="./index.html" alt="Глваная" class="navigation__link navigation__link--accent ">Студия</a> -->
-                        <!-- </li> -->
-                    <!--  -->
-                        <!-- <li class="navigation__item"> -->
-                            <!-- <a href="./portfolio.html" alt="Портфолио" class="navigation__link navigation__link--underline">Портфолио</a> -->
-                        <!-- </li> -->
-<!--  -->
-                        <!-- <li class="navigation__item"> -->
-                            <!-- <a href="./contacts.htm" alt="Контакты" class="navigation__link navigation__link--underline">Контакты</a> -->
-                        <!-- </li> -->
-<!--  -->
-                    <!-- </ul> -->
-                <!-- </nav> -->
-                ссылки контактов
-                <!-- <address class="header__address"> -->
-                    <!-- <a class="header__address-link" alt="Почта" href="mail:mail:info@devstudio.com"> -->
-                        <!-- <svg class="header__address-icon-envelope"> -->
-                            <!-- <use href="./images/icon.svg#icon-envelope"></use> -->
-                        <!-- </svg> -->
-                        <!-- info@devstudio.com -->
-                    <!-- </a> -->
-                    <!-- <a class="header__address-link header__address-link--margin" alt="телефон" href="tel:+380961111111"> -->
-                        <!-- <svg class="header__address-icon-phone"> -->
-                            <!-- <use href="./images/icon.svg#icon-Vector"></use> -->
-                        <!-- </svg> -->
-                        <!-- +38 096 111 11 11 -->
-                    <!-- </a> -->
-                <!-- </address> -->
-            <!-- </div> -->
-        <!-- </header> -->
+        <header class="header">
+            <div class="header__conteiner">
+                <!-- логотип -->
+                <a href="./index.html" alt="Логотип WebStudio" class="logo">
+                    <span class="logo__first-word">Web</span><span>Studio</span>
+                </a>
+                <button  type="button" class="menu-button" data-menu-button>
+                    <svg width="40" height="40">
+                        <use href="./images/icon.svg#icon-menu_O" class="open-menu"></use>
+                        <use href="./images/icon.svg#icon-close_O" class="close-menu"></use>
+                    </svg>
+                </button>
+                <!-- Навигация -->
+                <div class="menu">
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                    
+                             <li class="navigation__item">
+                                 <a href="./index.html" alt="Глваная" class="navigation__link navigation__link--accent ">Студия</a>
+                             </li>
+                        
+                             <li class="navigation__item">
+                                <a href="./portfolio.html" alt="Портфолио" class="navigation__link navigation__link--underline">Портфолио</a>
+                            </li>
+    
+                            <li class="navigation__item">
+                                <a href="./contacts.htm" alt="Контакты" class="navigation__link navigation__link--underline">Контакты</a>
+                            </li>
+    
+                        </ul> 
+                    </nav>
+                    <!-- ссылки контактов -->
+                    <address class="header__address"> 
+                        <a class="header__address-link" alt="Почта" href="mail:mail:info@devstudio.com">
+                            <svg class="header__address-icon-envelope">
+                                <use href="./images/icon.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                        <a class="header__address-link header__address-link--margin" alt="телефон" href="tel:+380961111111">
+                            <svg class="header__address-icon-phone">
+                                <use href="./images/icon.svg#icon-Vector"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </address>
+                </div>
+            </div>
+        </header>
         <!--Главный контент-->
         <main>
             <!--секция герой (баннер)-->
@@ -135,8 +143,8 @@
 
                         <li class="we-are-doing__item">
                             <img 
-                            srcset="./images/main/what_we_are_doing/box_1-2x.jpg"
-                            src="./images/main/what_we_are_doing/box_1-1x.jpg" alt="Разработка приложенияалгоритм на листке бумаги клавиатура экран с кодом приложения" width="370" height="294">
+                            srcset="./images/main/what_we_are_doing/box_1@2x.jpg 2x"
+                            src="./images/main/what_we_are_doing/box_1.jpg" alt="Разработка приложенияалгоритм на листке бумаги клавиатура экран с кодом приложения" width="370" height="294">
                             <div class="we-are-doing__item-lable">
                                 <p class="we-are-doing___item-lable-text">Десктопные приложения</p>
                             </div>
@@ -144,8 +152,8 @@
 
                         <li class="we-are-doing__item">
                             <img 
-                            srcset="./images/main/what_we_are_doing/box_2-2x.jpg 2x"
-                            src="./images/main/what_we_are_doing/box_2-1x.jpg" alt="разработка мобильного приложения" width="370" height="294">
+                            srcset="./images/main/what_we_are_doing/box_2@2x.jpg 2x"
+                            src="./images/main/what_we_are_doing/box_2.jpg" alt="разработка мобильного приложения" width="370" height="294">
                             <div class="we-are-doing__item-lable">
                                 <p class="we-are-doing___item-lable-text">Мобильные приложения</p>
                             </div>
@@ -153,8 +161,8 @@
 
                         <li class="we-are-doing__item">
                             <img 
-                            srcset="./images/main/what_we_are_doing/box_3-2x.jpg 2x"
-                            src="./images/main/what_we_are_doing/box_3-1x.jpg" alt="планшет с палитрой в одной руке и стилус в другой руке" width="370" height="294">
+                            srcset="./images/main/what_we_are_doing/box_3@2x.jpg 2x"
+                            src="./images/main/what_we_are_doing/box_3.jpg" alt="планшет с палитрой в одной руке и стилус в другой руке" width="370" height="294">
                             <div class="we-are-doing__item-lable">
                                 <p class="we-are-doing___item-lable-text">Дизайнерские решения</p>
                             </div>
@@ -172,22 +180,16 @@
                         <li class="our-team__item">
                             <figure class="our-team__card">
                                 <picture>
-                                    <source srcset="./images/main/our_team/desktop/igor_demyanko-desk-1x.jpg 1x,
-                                                    ./images/main/our_team/desktop/igor_demyanko-desk-1x.webp 1x,
-                                                    ./images/main/our_team/desktop/igor_demyanko-desk-2x.jpg 2x,
-                                                    ./images/main/our_team/desktop/igor_demyanko-desk-2x.webp 2x"
+                                    <source srcset="./images/main/our_team/Descktop/Igor.jpg 1x,
+                                                    ./images/main/our_team/Descktop/Igor@2x.jpg 2x"
                                                     media="(min-width: 1200px)">
-                                    <source srcset="./images/main/our_team/table/igor_demyanko-tablet-1х.jpg 1x,
-                                                    ./images/main/our_team/table/igor_demyanko-tablet-1х.webp 1x, 
-                                                    ./images/main/our_team/table/igor_demyanko-tablet-2x.jpg 2x,
-                                                    ./images/main/our_team/table/igor_demyanko-tablet-2x.webp 2x" 
+                                    <source srcset="./images/main/our_team/Table/Igor.jpg 1x,
+                                                    ./images/main/our_team/Table/Igor@2x.jpg 2x" 
                                                     media="(min-width: 768px)">
-                                    <source srcset="./images/main/our_team/mobile/igor_demyanko-1х.jpg 1x,
-                                                    ./images/main/our_team/mobile/igor_demyanko-1х.webp 1x, 
-                                                    ./images/main/our_team/mobile/igor_demyanko-2х.jpg 2x,
-                                                    ./images/main/our_team/mobile/igor_demyanko-2х.webp 2x" 
+                                    <source srcset="./images/main/our_team/Mobile/Igor@2x.jpg 2x,
+                                                    ./images/main/our_team/Mobile/Igor.jpg 1x" 
                                                     media="(max-width: 767px)">
-                                    <img src="./images/main/our_team/mobile/igor_demyanko-1х.jpg" alt="">
+                                    <img src="./images/main/our_team/Mobile/Igor.jpg" alt="">
                                 </picture>
 
                                 <div class="our-team__card-caption">
@@ -235,22 +237,16 @@
                         <li class="our-team__item">
                             <figure class="our-team__card">
                                 <picture>
-                                    <source srcset="./images/main/our_team/desktop/olga_repina-desk-1x.jpg 1x,
-                                                    ./images/main/our_team/desktop/olga_repina-desk-1x.webp 1x,
-                                                    ./images/main/our_team/desktop/olga_repina-desk-2x.jpg 2x,
-                                                    ./images/main/our_team/desktop/olga_repina-desk-2x.webp 2x" 
+                                    <source srcset="./images/main/our_team/Descktop/Olga.jpg 1x,
+                                                    ./images/main/our_team/Descktop/Olga@2x.jpg 2x" 
                                                     media="(min-width: 1200px)">
-                                    <source srcset="./images/main/our_team/table/olga_repina-tablet-1x.jpg 1x,
-                                                    ./images/main/our_team/table/olga_repina-tablet-1x.webp 1x,
-                                                    ./images/main/our_team/table/olga_repina-tablet-2x.jpg 2x,
-                                                    ./images/main/our_team/table/olga_repina-tablet-2x.webp 2x" 
+                                    <source srcset="./images/main/our_team/Table/Olga.jpg 1x,
+                                                    ./images/main/our_team/Table/Olga@2x.jpg 2x" 
                                                     media="(min-width: 768px)">
-                                    <source srcset="./images/main/our_team/mobile/olga_repina-1х.jpg 1x,
-                                                    ./images/main/our_team/mobile/olga_repina-1х.webp 1x, 
-                                                    ./images/main/our_team/mobile/olga_repina-2х.jpg 2x,
-                                                    ./images/main/our_team/mobile/olga_repina-2х.webp 2x" 
+                                    <source srcset="./images/main/our_team/Mobile/Olga.jpg 1x,
+                                                    ./images/main/our_team/Mobile/Olga@2x.jpg 2x" 
                                                     media="(max-width: 767px)">        
-                                    <img src="./images/main/our_team/mobile/olga_repina-1х.jpg" alt="">
+                                    <img src="./images/main/our_team/Mobile/Olga.jpg" alt="">
                                 </picture>
                                 <div class="our-team__card-caption">
                                     <h3 class="our-team__card-title">Ольга Репина</h3>
@@ -297,22 +293,16 @@
                         <li class="our-team__item">
                             <figure class="our-team__card">
                                 <picture>
-                                    <source srcset="./images/main/our_team/desktop/nikolay_tarasov-desk-1x.jpg 1x,
-                                                    ./images/main/our_team/desktop/nikolay_tarasov-desk-1x.webp 1x,
-                                                    ./images/main/our_team/desktop/nikolay_tarasov-desk-2x.jpg 2x,
-                                                    ./images/main/our_team/desktop/nikolay_tarasov-desk-2x.webp 2x"
+                                    <source srcset="./images/main/our_team/Descktop/Nikolay.jpg 1x,
+                                                    ./images/main/our_team/Descktop/Nikolay@2x.jpg 2x"
                                                     media="(min-width: 1200px)">
-                                    <source srcset="./images/main/our_team/table/nikolay_tarasov-tablet-1x.jpg 1x,
-                                                    ./images/main/our_team/table/nikolay_tarasov-tablet-1x.webp 1x,
-                                                    ./images/main/our_team/table/nikolay_tarasov-tablet-2x.jpg 2x,
-                                                    ./images/main/our_team/table/nikolay_tarasov-tablet-2x.webp 2x" 
+                                    <source srcset="./images/main/our_team/Table/Nikolay.jpg 1x,
+                                                    ./images/main/our_team/Table/Nikolay@2x.jpg 2x" 
                                                     media="(min-width: 768px)">
-                                    <source srcset="./images/main/our_team/mobile/nikolay_tarasov-1х.jpg 1x,
-                                                    ./images/main/our_team/mobile/nikolay_tarasov-1х.webp 1x, 
-                                                    ./images/main/our_team/mobile/nikolay_tarasov-2х.jpg 2x,
-                                                    ./images/main/our_team/mobile/nikolay_tarasov-2х.webp 2x" 
+                                    <source srcset="./images/main/our_team/Mobile/Nikolay.jpg 1x, 
+                                                    ./images/main/our_team/Mobile/Nikolay@2x.jpg 2x," 
                                                     media="(max-width: 767px)">
-                                                    <img src="./images/main/our_team/mobile/nikolay_tarasov-1х.jpg" alt="" >
+                                    <img src="./images/main/our_team/Mobile/Nikolay.jpg" alt="" >
                                 </picture>
                                 
                                 <div class="our-team__card-caption">
@@ -360,20 +350,16 @@
                         <li class="our-team__item">
                             <figure class="our-team__card">
                                 <picture>
-                                    <source srcset="./images/main/our_team/desktop/mihail_ermakov-desk-1x.jpg 1x,
-                                                    ./images/main/our_team/desktop/mihail_ermakov-desk-1x.webp 1x,
-                                                    ./images/main/our_team/desktop/mihail_ermakov-desk-2x.webp 2x,
-                                                    ./images/main/our_team/desktop/mihail_ermakov-desk-2x.jpg 2x" 
+                                    <source srcset="./images/main/our_team/Descktop/Mihail.jpg 1x,
+                                                    ./images/main/our_team/Descktop/Mihail@2x.jpg 2x" 
                                                     media="(min-width: 1200px)">
-                                    <source srcset="./images/main/our_team/table/mihail_ermakov-tablet-1x.jpg 1x,
-                                                    ./images/main/our_team/table/mihail_ermakov-tablet-1x.webp 1x,
-                                                    ./images/main/our_team/table/mihail_ermakov-tablet-2x.webp 2x,
-                                                    ./images/main/our_team/table/mihail_ermakov-tablet-2x.jpg 2x" 
+                                    <source srcset="./images/main/our_team/Table/Mihail.jpg 1x,
+                                                    ./images/main/our_team/Table/Mihail@2x.jpg 2x" 
                                                     media="(min-width: 768px)">
-                                    <source srcset="./images/main/our_team/mobile/mihail_ermakov-1х.jpg 1x, 
-                                                    ./images/main/our_team/mobile/mihail_ermakov-2х.jpg 2x" 
+                                    <source srcset="./images/main/our_team/Mobile/Mihail.jpg 1x, 
+                                                    ./images/main/our_team/Mobile/Mihail@2x.jpg 2x" 
                                                     media="(max-width: 767px)">
-                                                    <img src="./images/main/our_team/mobile/mihail_ermakov-1х.jpg" alt="" >
+                                    <img src="./images/main/our_team/Mobile/Mihail.jpg" alt="" >
                                 </picture>
                                 <div class="our-team__card-caption">
                                     <h3 class="our-team__card-title">Михаил Ермаков</h3>
@@ -614,5 +600,6 @@
     </div>
     <!--Скрипты-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
