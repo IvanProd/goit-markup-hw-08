@@ -1,0 +1,49 @@
+.features{
+    padding-top: 94px;
+  }
+  
+  /*список особенностей*/
+  .features__list {
+      display: flex;
+      padding-left: 0;
+      list-style: none;
+  }
+  .features__item{
+      width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+    }
+  }
+  .features__iconbox {
+      display: inline-flex;
+      width: 270px;
+      background-color: var(--feature-icon-box);
+      align-items: center;
+      justify-content: center;
+      padding: 25px 0;
+      
+  }
+  .features__item-head {
+      margin-top: 30px;
+      font-family: var(--maine-font);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+  
+      color: var(--main-color);
+  }
+  .features__item-text {
+
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--dark-color);
+  
+      margin-top: 10px;
+  }
+  

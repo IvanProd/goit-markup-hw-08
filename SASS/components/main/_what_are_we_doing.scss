@@ -1,0 +1,48 @@
+/*чем мы занимаемся*/
+.wedo {
+    padding: 94px 0;
+}
+
+/*заголовок секции*/
+.wedo__head {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-color);
+}
+/*список секции*/
+.wedo__list {
+    display: flex;
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0;
+}
+/*элемент списка*/
+.wedo__item{
+    position: relative;
+    height: 294px;
+    padding: 0;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.wedo__item-lable {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0;
+    background-color: var(--wedo-lable-bg);
+}
+.wedo__item-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+}

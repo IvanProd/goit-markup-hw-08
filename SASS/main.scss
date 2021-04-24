@@ -1,0 +1,22 @@
+// Utils [Технические модули]
+@import './utils/variables';
+@import './utils/basis';
+
+// Components [Составные элементы]
+
+//head_and_footer
+@import './components/header_and_footer/header';
+@import './components/header_and_footer/footer';
+
+//main
+@import './components/main/hero';
+@import './components/main/features';
+@import './components/main/what_are_we_doing';
+@import './components/main/our_team';
+@import './components/main/regular_customers';
+@import './components/main/modal';
+
+//portfolio
+@import './components/portfolio/portfolio_project_navigation';
+@import './components/portfolio/portfolio';
+@import './components/portfolio/portfolio_card';

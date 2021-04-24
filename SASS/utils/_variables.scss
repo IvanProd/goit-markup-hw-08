@@ -1,0 +1,62 @@
+:root {
+    /*### ШРИФТЫ ###*/
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+
+    /*### политра ###*/
+    --accent: #2196F3;
+    --main-color: #212121;
+    --dark-color: #757575;
+    --light-color: #FFFFFF;
+
+    /*цвет фона*/
+    --body-bakeground-color: #E5E5E5;
+
+    /*шапка*/
+    --logo-color-right: #000000;
+    --head-bottom-line: #ECECEC;
+
+    /*герой*/
+    --hero-bakeground-color: #2F303A;
+
+    /*особенности*/
+    --feature-icon-box: #F5F4FA;
+
+    /*чем мы занимаемся*/
+    --wedo-lable-bg: rgba(47, 48, 58, 0.8);
+
+    /*наша комвнда*/
+    --team-bakeground-color: #F5F4FA;
+    --social-icon-color: #AFB1B8;
+
+    /* постоянные клиенты */
+    --clients-item-borter: #AFB1B8;
+
+    /*подвал*/
+    --footer-bgcolor: #2F303A;
+    --footer-address-contact: rgba(255, 255, 255, 0.6);
+    --footer-social-icon-round: rgba(255, 255, 255, 0.1);
+
+    /*ПОРТФОЛИО*/
+
+    /*cссылки навигации*/
+    --portfolio-button-bgcolor: #F5F4FA;
+    --portfolio-button-text-active-color: #FFFFFF;
+    
+    /*каталог портфолио*/
+    --project-card-bgcolor: #FFFFFF;
+    --project-card-border-color: #EEEEEE;
+    --card-text: #757575;
+    --card-description-dg: rgba(33, 150, 243, 0.9);
+    --card-description-text: #FFFFFF;
+    
+    /*модальное окно*/
+    --backdrop-color:rgba(0, 0, 0, 0.2);
+    --close-color: rgba(0, 0, 0, 0.1);
+    --modal-form-text:#757575;
+    --modal-input-color: rgba(33, 33, 33, 0.2);
+    --modal-button-hover: #188CE8;
+    --button-text: #FFFFFF;
+    --commit-text: rgba(117, 117, 117, 0.5);
+}
+
