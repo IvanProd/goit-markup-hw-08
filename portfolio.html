@@ -15,41 +15,66 @@
     <!--Шапка страницы-->
     <header class="header">
         <div class="header__box conteiner">
-                        <!--логотип-->
+            <!--логотип-->
             <div class="logo">
-                <a href="index.html" class="logo__link">
+                <a class="logo__link" href="index.html" >
                     <span class="logo__text--accent">Web</span><span class="logo__text">Studio</span>
                 </a>        
             </div>
-            <!--Главная навигация-->
-            <nav class="navigation">
-                <!--список ссылок навигации-->
-                <ul class="navigation__list">
-                    <!--ссылки навигации-->
-                    <li class="navigation__item">
-                        <a href="index.html" class="navigation__link">Студия</a>
+
+            <div class="header__contant-box" data-menu>
+                <!--Главная навигация-->
+                <nav class="navigation">
+                    <!--список ссылок навигации-->
+                    <ul class="navigation__list">
+                        <!--ссылки навигации-->
+                        <li class="navigation__item">
+                            <a class="navigation__link " href="./index.html" >Студия</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link accent" href="./portfolio.html" >Портфолио</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="./contacts.html" >Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--контактные ссылки-->
+                <div class="header__interactive-blok">
+                    <a class="header__link mail" href="mailto:info@devstudio.com" >
+                        <svg class="header__link-icon" width="16" height="12">
+                            <use href="./images/icon.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                    <a class="header__link num" href="tel:+380961111111" >
+                        <svg class="header__link-icon" width="10" height="16">
+                            <use href="./images/icon.svg#phone"></use>
+                        </svg> 
+                        +38 096 111 11 11
+                    </a>
+                </div>
+                <ul class="header_social-list">
+                    <li class="header_social-item">
+                        <a href="#" class="header_social-link">Instagram</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="portfolio.html" class="navigation__link accent">Портфолио</a>
+                    <li class="header_social-item">
+                        <a href="#" class="header_social-link">Twitter</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="" class="navigation__link">Контакты</a>
+                    <li class="header_social-item">
+                        <a href="#" class="header_social-link">Facebook</a>
+                    </li>
+                    <li class="header_social-item">
+                        <a href="#" class="header_social-link">LinkedIn</a>
                     </li>
                 </ul>
-            </nav>
-            <!--контактные ссылки-->
-            <a href="mailto:info@devstudio.com" class="header__link mail">
-                <svg class="header__link-icon" width="16" height="12">
-                    <use href="./images/icon.svg#envelope"></use>
+            </div>
+            <button class="mobile__btn" data-menu-button>
+                <svg class="mobile__btn-icon" aria-label="кнопка меню">
+                    <use class="burger" href="./images/icon.svg#menu_burger" ></use>
+                    <use class="crose" href="./images/icon.svg#menu_close" ></use>
                 </svg>
-                info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="header__link num">
-                <svg class="header__link-icon" width="10" height="16">
-                    <use href="./images/icon.svg#phone"></use>
-                </svg> 
-                +38 096 111 11 11
-            </a>
+            </button>  
         </div>
     </header>
     <!--основной контент-->
@@ -90,7 +115,18 @@
                                     конкурентов.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/technocrak.jpg" alt="открытый ноутбук с изображением веб сайта на экране" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project1_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project1_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project1_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project1_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project1_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project1_2x.jpg 2x">
+                                <img src="./images/portfolio/desktop/project1_1x.jpg" alt="открытый ноутбук с изображением веб сайта на экране" >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Технокляк</h3>
@@ -110,7 +146,18 @@
                                     nihil dolore odio doloremque rerum?
                                 </p>
                             </div>
-                            <img src="./images/portfolio/poster.jpg" alt="Баскетболисты в фиолетовой и белой форме борятся за мяч в прыжке" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project2_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project2_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project2_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project2_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project2_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project2_2x.jpg 2x">
+                                <img src="./images/portfolio/desktop/project2_1x.jpg" alt="Баскетболисты в фиолетовой и белой форме борятся за мяч в прыжке" >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Постер New Orlean vs Golden Star</h3>
@@ -131,7 +178,18 @@
                                     nihil ut.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/aplication_restoran.jpg" alt="Стилизированая надпись the seafood restaurant на фоне рыбы " width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project3_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project3_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project3_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project3_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project3_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project3_2x.jpg 2x">
+                                <img src="./images/portfolio/desktop/project3_1x.jpg" alt="Стилизированая надпись the seafood restaurant на фоне рыбы " >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Ресторан Seafood</h3>
@@ -152,7 +210,18 @@
                                     laborum ratione amet.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/prime_marketing.jpg" alt="Наушники" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project4_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project4_1x.jpg 1x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project4_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project4_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project4_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project4_2x.jpg 2x">
+                                <img src="./images/portfolio/desktop/project4_1x.jpg" alt="Наушники" >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Проект Prime</h3>
@@ -173,7 +242,18 @@
                                     nostrum.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/aplication_boxes.jpg" alt="Две коробки с надписями большая белая и маленькая коричневая" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project5_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project5_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project5_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project5_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project5_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project5_2x.jpg 2x">
+                                <img src="./images/portfolio/aplication_boxes.jpg" alt="Две коробки с надписями большая белая и маленькая коричневая" >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Проект Boxes</h3>
@@ -194,7 +274,18 @@
                                     incidunt vitae!
                                 </p>
                             </div>
-                            <img src="./images/portfolio/web_site.jpg" alt="Монитор с изображением сайта на котором текст и карта мира" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project6_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project6_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project6_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project6_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project6_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project6_2x.jpg 2x">
+                                <img src="./images/portfolio/desktop/project6_1x.jpg" alt="Монитор с изображением сайта на котором текст и карта мира" >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Inspiration has no Borders</h3>
@@ -215,7 +306,18 @@
                                     numquam deserunt ducimus.
                                 </p>
                             </div>
-                            <img src="./images/portfolio/edition_design.jpg" alt="открытая книгы с фотографиями и текстом" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project7_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project7_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project7_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project7_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project7_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project7_2x.jpg 2x">
+                                <img src="./images/portfolio/desktop/project7_1x.jpg" alt="открытая книгы с фотографиями и текстом" >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Издание Limited Edition</h3>
@@ -236,7 +338,18 @@
                                     Facere, natus neque?
                                 </p>
                             </div>
-                            <img src="./images/portfolio/lab_marketing.jpg" alt="Белая этикетка с надписью LAB EL TAG на джгутовой нитке" width="370" height="294">
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project8_1x.jpg 1x,
+                                                ./images/portfolio/mobile/m_project8_2x.jpg 2x">
+                                <source media="(max-width: )" 
+                                        srcset="./images/portfolio/table/t_project8_1x.jpg 1x,
+                                                ./images/portfolio/table/t_project8_2x.jpg 2x">
+                                <source media="(min-width: )" 
+                                        srcset="./images/portfolio/desktop/project8_1x.jpg 1x,
+                                                ./images/portfolio/desktop/project8_2x.jpg 2x">
+                                <img src="./images/portfolio/desktop/project8_1x.jpg" alt="Белая этикетка с надписью LAB EL TAG на джгутовой нитке" >
+                            </picture>
                         </div>
                         <div class="caption">
                             <h3 class="card__head">Проект LAB</h3>
@@ -257,8 +370,19 @@
                                     Facere, natus neque?
                                 </p>
                             </div> 
-                            <img src="./images/portfolio/aplicanion_growing_buisness.jpg" alt="Ноутбук на рабочем столе с открытым приложением" width="370" height="294">
-                        </div>
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/portfolio/mobile/m_project9_1x.jpg 1x,
+                                        ./images/portfolio/mobile/m_project9_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/portfolio/table/t_project9_1x.jpg 1x,
+                                        ./images/portfolio/table/t_project9_2x.jpg 2x" />
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/project9_1x.jpg 1x,
+                                        ./images/portfolio/desktop/project9_2x.jpg 2x" />
+                                <img src="./images/portfolio/aplicanion_growing_buisness.jpg" alt="Ноутбук на рабочем столе с открытым приложением" >
+                            </picture>
+                            </div>
                         <div class="caption">
                             <h3 class="card__head">Growing Business</h3>
                             <p class="card__text">Приложение</p>
@@ -338,5 +462,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

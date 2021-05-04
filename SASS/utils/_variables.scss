@@ -58,5 +58,14 @@
     --modal-button-hover: #188CE8;
     --button-text: #FFFFFF;
     --commit-text: rgba(117, 117, 117, 0.5);
-}
 
+}
+$features_tablet: calc(100% / 2 - 30px);
+$features_descktop: calc(100% / 4 - 30px);
+
+$team_tablet: calc(100% / 2 - 30px);
+$team_descktop: calc(100% / 4 - 30px);
+
+$customers_mobile: calc(100% / 2 - 30px);
+$customers_tablet: calc(100% / 3 - 30px);
+$customers_descktop: calc(100% / 6 - 30px);

@@ -18,54 +18,80 @@
             <div class="header__box conteiner">
                 <!--логотип-->
                 <div class="logo">
-                    <a href="index.html" class="logo__link">
+                    <a class="logo__link" href="index.html" >
                         <span class="logo__text--accent">Web</span><span class="logo__text">Studio</span>
                     </a>        
                 </div>
-                <!--Главная навигация-->
-                <nav class="navigation">
-                    <!--список ссылок навигации-->
-                    <ul class="navigation__list">
-                        <!--ссылки навигации-->
-                        <li class="navigation__item">
-                            <a href="./index.html" class="navigation__link accent">Студия</a>
+
+                <div class="header__contant-box" data-menu>
+                    <!--Главная навигация-->
+                    <nav class="navigation">
+                        <!--список ссылок навигации-->
+                        <ul class="navigation__list">
+                            <!--ссылки навигации-->
+                            <li class="navigation__item">
+                                <a class="navigation__link accent" href="./index.html" >Студия</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="./portfolio.html" >Портфолио</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="./contacts.html" >Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--контактные ссылки-->
+                    <div class="header__interactive-blok">
+                        <a class="header__link mail" href="mailto:info@devstudio.com" >
+                            <svg class="header__link-icon" width="16" height="12">
+                                <use href="./images/icon.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                        <a class="header__link num" href="tel:+380961111111" >
+                            <svg class="header__link-icon" width="10" height="16">
+                                <use href="./images/icon.svg#phone"></use>
+                            </svg> 
+                            +38 096 111 11 11
+                        </a>
+                    </div>
+                    <ul class="header_social-list">
+                        <li class="header_social-item">
+                            <a href="#" class="header_social-link">Instagram</a>
                         </li>
-                        <li class="navigation__item">
-                            <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+                        <li class="header_social-item">
+                            <a href="#" class="header_social-link">Twitter</a>
                         </li>
-                        <li class="navigation__item">
-                            <a href="./contacts.html" class="navigation__link">Контакты</a>
+                        <li class="header_social-item">
+                            <a href="#" class="header_social-link">Facebook</a>
+                        </li>
+                        <li class="header_social-item">
+                            <a href="#" class="header_social-link">LinkedIn</a>
                         </li>
                     </ul>
-                </nav>
-                <!--контактные ссылки-->
-                    <a href="mailto:info@devstudio.com" class="header__link mail">
-                        <svg class="header__link-icon" width="16" height="12">
-                            <use href="./images/icon.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                    <a href="tel:+380961111111" class="header__link num">
-                        <svg class="header__link-icon" width="10" height="16">
-                            <use href="./images/icon.svg#phone"></use>
-                        </svg> 
-                        +38 096 111 11 11
-                    </a>
+                </div>
+                <button class="mobile__btn" data-menu-button>
+                    <svg class="mobile__btn-icon" aria-label="кнопка меню">
+                        <use class="burger" href="./images/icon.svg#menu_burger" ></use>
+                        <use class="crose" href="./images/icon.svg#menu_close" ></use>
+                    </svg>
+                </button>  
             </div>
         </header>
     <!--гланый контент-->
-        <main>
-            <!--герой-->
-            <section class="hero-section">
+         <main>
+
+            <section class="hero-section mobile tablet desctop">
                 <div class="hero conteiner">
                     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="hero__button" data-open-modal>
+                    <button class="hero__button" type="button"  data-open-modal>
                         <span class="hero__button-text">Заказать услугу</span>
                     </button>
                 </div>
             </section>
-        <!--особенности-->
-            <section class="features">
+
+
+             <section class="features">
                 <div class="conteiner">
                     <h2 class="visually-hidden">особенности</h2>
                     <ul class="features__list">
@@ -108,28 +134,41 @@
                     </ul>
                 </div>
             </section>
-         <!--чем мы занимаемся-->
-            <section class="wedo">
+
+
+           <section class="wedo">
                 <div class="conteiner">
                     <h2 class="wedo__head">Чем мы занимаемся</h2>
                     <ul class="wedo__list">
                         
                         <li class="wedo__item">
-                            <img src="./images/main/features/box_1.jpg" alt="алгоритм на листке бумаги клавиатура экран с цветным кодом" width="370" height="294">
+                            <img 
+                                src="./images/main/we_do/desktop/box1_1x.jpg" 
+                                srcset="./images/main/we_do/desktop/box1_1x.jpg 1x,
+                                ./images/main/we_do/desktop/box1_2x.jpg 2x"
+                                alt="алгоритм на листке бумаги клавиатура экран с цветным кодом" width="370" height="294">
                             <div class="wedo__item-lable">
                                 <p class="wedo__item-description">Десктопные приложения</p>
                             </div>
                         </li>
                         
                         <li class="wedo__item">
-                               <img src="./images/main/features/box_2.jpg" alt="разработка мобильного приложения" width="370" height="294">
+                               <img
+                               src="./images/main/we_do/desktop/box2_1x.jpg" 
+                               srcset="./images/main/we_do/desktop/box2_1x.jpg 1x,
+                               ./images/main/we_do/desktop/box2_2x.jpg 2x" 
+                                    alt="разработка мобильного приложения" width="370" height="294">
                             <div class="wedo__item-lable">
                                 <p class="wedo__item-description">Мобильные приложения</p>
                             </div>
                         </li>
 
                         <li class="wedo__item">
-                            <img src="./images/main/features/box_3.jpg" alt="планшет с пейнт мапом водной руке и стилус в другой руке" width="370" height="294">
+                            <img 
+                            src="./images/main/we_do/desktop/box3_1x.jpg" 
+                            srcset="./images/main/we_do/desktop/box3_1x.jpg 1x,
+                            ./images/main/we_do/desktop/box3_2x.jpg 2x"
+                                alt="планшет с пейнт мапом водной руке и стилус в другой руке" width="370" height="294">
                             <div class="wedo__item-lable">
                                 <p class="wedo__item-description">Дизайнерские решения</p>
                             </div>
@@ -137,17 +176,27 @@
 
                     </ul>
                 </div>
-            </section>
-        <!--наша команда-->
-            <section class="our-team">
+            </section> 
+
+
+             <section class="our-team">
                 <div class="conteiner">
                     <h2 class="our-team__head">Наша команда</h2>
                     <ul class="oure-teame__list">
     
                         <li class="oure-teame__card">
-                            
-                               <img src="./images/main/our_team/igor_demyanko.jpg" alt="улыбающийся мужчина в красной рубашке с очками и бородой" width="270" height="260">
-                            
+                            <picture>
+                                <source media="(max-width:767px)"
+                                        srcset="./images/main/our_team/mobile/m_Igor_1x.jpg 1x, 
+                                        ./images/main/our_team/mobile/m_Igor_2x.jpg 2x" />
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/main/our_team/table/t_Igor_1x.jpg 1x, 
+                                        ./images/main/our_team/table/t_Igor_2x.jpg 2x" />
+                                <source media="(min-width:1200px)" 
+                                        srcset="./images/main/our_team/desktop/Igor_1x.jpg 1x,
+                                        ./images/main/our_team/desktop/Igor_2x.jpg 2x" />
+                               <img src="./images/main/our_team/desktop/Igor_1x.jpg" alt="улыбающийся мужчина в красной рубашке с очками и бородой" >
+                            </picture>
                             <div class="oure-teame__description">
                                 <h3 class="oure-teame__card-head">Игорь Демьяненко</h3>
                                 <p lang="en" class="oure-teame__card-text">Product Designer</p>
@@ -189,9 +238,18 @@
                             </div>
                         </li>
                         <li class="oure-teame__card">
-                            
-                                <img src="./images/main/our_team/olga_repina.jpg" alt="Улыбающеяся светловолосая женщина в пиджаке и в прямоугольных красных очках" width="270" height="260">
-                            
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/main/our_team/mobile/m_Olga_1x.jpg 1x, 
+                                        ./images/main/our_team/mobile/m_Olga_2x.jpg 2x" />
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/main/our_team/table/t_Olga_1x.jpg 1x,
+                                        ./images/main/our_team/table/t_Olga_2x.jpg 2x" />
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/main/our_team/desktop/Olga_1x.jpg 1x,
+                                        ./images/main/our_team/desktop/Olga_2x.jpg 2x" />
+                                <img src="./images/main/our_team/desktop/Olga_1x.jpg" alt="Улыбающеяся светловолосая женщина в пиджаке и в прямоугольных красных очках" >
+                            </picture>
                             <div class="oure-teame__description">
                                 <h3 class="oure-teame__card-head">Ольга Репина</h3>
                                 <p lang="en" class="oure-teame__card-text">Frontend Developer</p>
@@ -233,9 +291,18 @@
                             </div>
                         </li>
                         <li class="oure-teame__card">
-                            
-                                <img src="./images/main/our_team/nikolay_tarasov.jpg" alt="улыбающийся парень в белой рубашке с маленькой бородой" width="270" height="260">
-                            
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/main/our_team/mobile/m_Nikolay_1x.jpg 1x,
+                                        ./images/main/our_team/mobile/m_Nikolay_2x.jpg 2x" />
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/main/our_team/table/t_Nikolay_1x.jpg 1x,
+                                        ./images/main/our_team/table/t_Nikolay_2x.jpg 2x" />
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/main/our_team/desktop/Nikolai_1x.jpg 1x,
+                                        ./images/main/our_team/desktop/Nikolai_2x.jpg 2x" />
+                                <img src="./images/main/our_team/desktop/Nikolai_1x.jpg" alt="улыбающийся парень в белой рубашке с маленькой бородой" >
+                            </picture>
                             <div class="oure-teame__description">
                                 <h3 class="oure-teame__card-head">Николай Тарасов</h3>
                                 <p lang="en" class="oure-teame__card-text">Marketing</p>
@@ -277,9 +344,18 @@
                             </div>
                         </li>
                         <li class="oure-teame__card">
-                            
-                               <img src="./images/main/our_team/mihail_ermakov.jpg" alt="парень в черной футболке в круглых очках и с бородой" width="270" height="260">
-                            
+                            <picture>
+                                <source media="(max-width: 767px)" 
+                                        srcset="./images/main/our_team/mobile/m_Mihail_1x.jpg 1x,
+                                        ./images/main/our_team/mobile/m_Mihail_2x.jpg 2x">
+                                <source media="(max-width: 1199px)" 
+                                        srcset="./images/main/our_team/table/t_Mihail_1x.jpg 1x,
+                                        ./images/main/our_team/table/t_Mihail_2x.jpg 2x">
+                                <source media="(min-width: 1200px)" 
+                                        srcset="./images/main/our_team/desktop/Mihail_1x.jpg 1x,
+                                        ./images/main/our_team/desktop/Mihail_2x.jpg 2x">
+                               <img src="./images/main/our_team/desktop/Mihail_1x.jpg" alt="парень в черной футболке в круглых очках и с бородой" >
+                            </picture>
                             <div class="oure-teame__description">
                                 <h3 class="oure-teame__card-head">Михаил Ермаков</h3> 
                                 <p lang="en" class="oure-teame__card-text">UI Designer</p>
@@ -323,7 +399,8 @@
                     </ul>
                 </div>
             </section>
-        <!-- постоянные клиенты     -->
+
+
             <section class="clients">
                 <div class="conteiner">
                     <h2 class="clients__head">Постоянные клиенты</h2>
@@ -373,8 +450,9 @@
                     </ul>
                 </div>
             </section>
-        </main>
-        <!--подал-->
+        </main> 
+
+
         <footer class="footer">
             <div class="conteiner">
                 <div class="footer__box"> 
@@ -443,7 +521,8 @@
                 </div>
             </div>
         </footer>
-        <!--модальное окно-->
+        
+        
         <div class="backdrop is-hidden" data-backdrop>
             <div class="modal-port" data-open-modal>
                 <button type="button" class="round" data-close-modal>
@@ -493,8 +572,8 @@
                 </button>
             </div>
         </div>
-    </div>
-        <!--скрипт открытия закрытия окна-->
+        <!--скрипт-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     </body>
 </html>
