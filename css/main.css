@@ -658,14 +658,14 @@ img {
   background-size: 480px 400px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/main/hero_background/mobile/m_Header_1x.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/main/hero_background/mobile/m_Header_1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/main/hero_background/mobile/m_Header_1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/main/hero_background/mobile/m_Header_1x.jpg");
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/main/hero_background/mobile/m_Header_2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/main/hero_background/mobile/m_Header_2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/main/hero_background/mobile/m_Header_2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/main/hero_background/mobile/m_Header_2x.jpg");
   }
 }
 
@@ -673,15 +673,15 @@ img {
   .hero-section {
     max-width: 768px;
     background-size: 768px 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/main/hero_background/table/t_header_1x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/main/hero_background/table/t_header_1x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/main/hero_background/table/t_header_1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/main/hero_background/table/t_header_1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/main/hero_background/table/t_header_2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/main/hero_background/table/t_header_2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/main/hero_background/table/t_header_2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/main/hero_background/table/t_header_2x.jpg");
   }
 }
 
@@ -695,15 +695,15 @@ img {
             box-sizing: border-box;
     background-size: cover;
     background-position: center;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/main/hero_background/desktop/descktop1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/main/hero_background/desktop/descktop1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/main/hero_background/desktop/descktop1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/main/hero_background/desktop/descktop1x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/main/hero_background/desktop/descktop2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/main/hero_background/desktop/descktop2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/main/hero_background/desktop/descktop2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/main/hero_background/desktop/descktop2x.jpg");
   }
 }
 
@@ -1205,6 +1205,7 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100%;
@@ -1250,10 +1251,16 @@ img {
   transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-  width: 528px;
+  width: 450px;
   /* height: 581px; */
   background-color: var(--light-color);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-port {
+    width: 528px;
+  }
 }
 
 .round {
@@ -1453,11 +1460,18 @@ img {
   font-family: var(--maine-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(---dark-color);
   padding-left: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contract-text {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }
 
 .contract-checkbox {
