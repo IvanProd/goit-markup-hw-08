@@ -1,11 +1,22 @@
 .portfolio__navigation-list {
     display: flex;
-    justify-content: center;
     list-style: none;
     font-family: var(--maine-font);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
-    
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;    
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }   
+}
+.portfolio__navigation-item{
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }
 .portfolio__navigation-item:not(:last-child) {
     margin-right: 8px;
@@ -17,7 +28,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.625;
+    line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--main-color);
 
