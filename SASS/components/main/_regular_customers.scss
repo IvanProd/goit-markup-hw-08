@@ -38,6 +38,15 @@
     flex-basis: $customers_mobile;
     margin-left: 30px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: $customers_tablet;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: $customers_descktop;
+
+    }
+
 }
 .clients__link {
     display: inline-flex;
@@ -46,7 +55,7 @@
 
     color: var(--clients-item-borter);
 
-    width: 210px;
+    width: 100%;
     height: 90px;
     border: 1px solid var(--clients-item-borter);
     box-sizing: border-box;
@@ -54,16 +63,21 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+
+    }
+
     &:hover,
     &:focus{
     outline: none;
     color: var(--accent);
     border-color: var(--accent);
 
-    @media screen and (min-width: 1200px) {
-        width: 170px;
-
-    }
 }
 
 }

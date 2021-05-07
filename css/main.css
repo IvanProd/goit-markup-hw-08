@@ -281,8 +281,8 @@ img {
     content: "";
     position: absolute;
     bottom: 0;
-    -webkit-transform: translateY(33px) scaleX(0);
-            transform: translateY(33px) scaleX(0);
+    -webkit-transform: translateY(30px) scaleX(0);
+            transform: translateY(30px) scaleX(0);
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -295,8 +295,8 @@ img {
     border-radius: 2px;
   }
   .navigation__link:hover::after, .navigation__link:focus::after {
-    -webkit-transform: translateY(33px) scaleX(1);
-            transform: translateY(33px) scaleX(1);
+    -webkit-transform: translateY(30px) scaleX(1);
+            transform: translateY(30px) scaleX(1);
   }
   .navigation__link:hover, .navigation__link:focus {
     outline: none;
@@ -313,8 +313,24 @@ img {
     content: "";
     position: absolute;
     bottom: 0;
-    -webkit-transform: translateY(33px) scaleX(1);
-            transform: translateY(33px) scaleX(1);
+    -webkit-transform: translateY(30px) scaleX(1);
+            transform: translateY(30px) scaleX(1);
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-bottom: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .accent::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translateY(30px) scaleX(1);
+            transform: translateY(30px) scaleX(1);
     display: block;
     width: 100%;
     height: 4px;
@@ -349,6 +365,16 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__interactive-blok {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 305px;
   }
 }
 
@@ -430,13 +456,6 @@ img {
 @media screen and (min-width: 1200px) {
   .header__link-icon {
     margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .icon-mail {
-    width: 14px;
-    height: 10px;
   }
 }
 
@@ -553,6 +572,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: calc(100% / 3 - 163px);
+      flex-basis: calc(100% / 3 - 163px);
 }
 
 @media screen and (max-width: 767px) {
@@ -574,6 +595,13 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -670,6 +698,7 @@ img {
     height: 80px;
     margin-top: 12px;
     margin-right: 93px;
+    margin-left: 0;
   }
 }
 
@@ -747,6 +776,12 @@ img {
   fill: currentColor;
 }
 
+@media screen and (max-width: 767px) {
+  .subscribe {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .subscribe {
     text-align: center;
@@ -800,12 +835,18 @@ img {
   letter-spacing: 0.03em;
   padding: 15px 0 15px 16px;
   color: var(--light-color);
-  width: 450px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__subscribe__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -974,7 +1015,7 @@ img {
   color: var(--light-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .features {
     padding: 60px 0;
   }
@@ -994,6 +1035,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    margin-right: -30px;
+  }
 }
 
 .features__item {
@@ -1135,7 +1182,7 @@ img {
   background-color: var(--team-bakeground-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .our-team {
     padding: 60px 0;
   }
@@ -1154,6 +1201,12 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__head {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1179,6 +1232,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -1218,6 +1273,8 @@ img {
     width: 354px;
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1226,6 +1283,7 @@ img {
     width: 270px;
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
+    margin-top: 0;
   }
 }
 
@@ -1374,6 +1432,20 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc(100% / 6 - 30px);
+        flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
 .clients__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1385,7 +1457,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--clients-item-borter);
-  width: 210px;
+  width: 100%;
   height: 90px;
   border: 1px solid var(--clients-item-borter);
   -webkit-box-sizing: border-box;
@@ -1395,16 +1467,22 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
+}
+
 .clients__link:hover, .clients__link:focus {
   outline: none;
   color: var(--accent);
   border-color: var(--accent);
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__link:hover, .clients__link:focus {
-    width: 170px;
-  }
 }
 
 .clients__icon {

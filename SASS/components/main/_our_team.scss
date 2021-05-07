@@ -2,12 +2,10 @@
 .our-team{
     
     background-color: var(--team-bakeground-color);
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         padding: 60px 0;
     }
-    @media screen and (min-width: 768px) {
-        
-    }
+
 
     @media screen and (min-width: 1200px) {
         padding: 94px 0;
@@ -28,7 +26,7 @@
     // }
 
     @media screen and (min-width: 768px) {
-        
+        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -46,8 +44,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // margin-top: 50px;
-        
+        margin-top: -30px;
+        margin-left: -30px; 
+      
     }
 
     @media screen and (min-width: 1200px) {
@@ -67,9 +66,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     // outline: 1px solid red;
-    // &:not(:last-child){
-    //     margin-right: 30px;
-    // }
+
     flex-basis: calc(100% - 30px );
 
     @media screen and (max-width: 767px) {
@@ -80,11 +77,14 @@
     @media screen and (min-width: 768px) {
         width: 354px;
         flex-basis: $team_tablet;
+        margin-left: 30px;
+        margin-top: 30px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 270px;
         flex-basis: $team_descktop;
+        margin-top: 0;
     }
 }
 /*подпись карточки*/
@@ -115,17 +115,6 @@
     text-align: center;
     color: var(--main-color);
 
-    // @media screen and (max-width: 767px) {
-        
-    // }
-
-    @media screen and (min-width: 768px) {
-        
-    }
-
-    @media screen and (min-width: 1200px) {
-        
-    }
 }
 .oure-teame__card-text {
     font-weight: 400;
@@ -137,14 +126,6 @@
 
     margin-top: 10px;
 
-
-    @media screen and (min-width: 768px) {
-        
-    }
-
-    @media screen and (min-width: 1200px) {
-        
-    }
 }
 .oure-teame__social {
     display: flex;
@@ -154,17 +135,6 @@
     margin-top: 16px;
     // outline: 1px solid green;
 
-    @media screen and (max-width: 767px) {
-        
-    }
-
-    @media screen and (min-width: 768px) {
-        
-    }
-
-    @media screen and (min-width: 1200px) {
-        
-    }
 }
 .oure-teame__social-item{
     display: inline-flex;
@@ -177,17 +147,6 @@
         margin-right: 10px;
     }
 
-    @media screen and (max-width: 767px) {
-        
-    }
-
-    @media screen and (min-width: 768px) {
-        
-    }
-
-    @media screen and (min-width: 1200px) {
-        
-    }
 }
 .oure-teame__social-link {
     display: inline-flex;
@@ -212,17 +171,7 @@
         color: var(--light-color);
     }
 
-    // @media screen and (max-width: 767px) {
-        
-    // }
 
-    // @media screen and (min-width: 768px) {
-        
-    // }
-
-    // @media screen and (min-width: 1200px) {
-        
-    // }
 }
 
 .oure-teame__social-icon {
