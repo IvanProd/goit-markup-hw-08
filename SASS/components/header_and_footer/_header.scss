@@ -151,14 +151,26 @@
         }
         &:hover::after,
         &:focus::after{
-            transform: translateY(30px) scaleX(1);
+            transform: translateY(33px) scaleX(1);
         } 
         &:hover,
         &:focus{
             outline: none;
             color: var(--accent);
         }
-    }   
+    } 
+    @media screen and (min-width:1200px) {
+        &::after{
+
+            transform: translateY(30px) scaleX(0);
+
+        }
+        &:hover::after,
+        &:focus::after{
+            transform: translateY(30px) scaleX(1);
+        } 
+
+    } 
 }
 
 .accent{
@@ -168,7 +180,7 @@
             content: "";
             position: absolute;
             bottom: 0;
-            transform: translateY(30px) scaleX(1);
+            transform: translateY(33px) scaleX(1);
         
             display: block;
             width: 100%;
@@ -228,6 +240,8 @@
         color: var(--main-color);
     }
     @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
         font-size: 12px;
         line-height: 1.16;
         color: var(--dark-color);
@@ -267,6 +281,9 @@
     
 }
 .mail{
+    @media screen and (max-width:1199px) {
+        margin-bottom: 10px;
+    }
     @media screen and (min-width:1200px) {
         margin-right: 30px;
     }
@@ -287,7 +304,8 @@
 }
 .icon-mail{
     @media screen and (min-width: 768px){
-
+        width: 14px;
+        height: 10px;
     }
     @media screen and (min-width: 1200px) {
         width: 16px;
