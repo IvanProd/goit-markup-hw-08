@@ -147,7 +147,7 @@
             content: "";
             position: absolute;
             bottom: 0;
-            transform: translateY(30px) scaleX(0);
+            transform: translateY(33px) scaleX(0);
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
             display: block;
@@ -170,12 +170,12 @@
     @media screen and (min-width:1200px) {
         &::after{
 
-            transform: translateY(30px) scaleX(0);
+            transform: translateY(33px) scaleX(0);
 
         }
         &:hover::after,
         &:focus::after{
-            transform: translateY(30px) scaleX(1);
+            transform: translateY(34px) scaleX(1);
         } 
 
     } 
@@ -203,7 +203,7 @@
             content: "";
             position: absolute;
             bottom: 0;
-            transform: translateY(30px) scaleX(1);
+            transform: translateY(34px) scaleX(1);
         
             display: block;
             width: 100%;
