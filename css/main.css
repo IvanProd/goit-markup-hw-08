@@ -126,6 +126,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__box {
     position: relative;
@@ -434,9 +440,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header__link {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -662,6 +668,7 @@ img {
 }
 
 .footer__logo {
+  display: block;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -670,6 +677,12 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--light-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -706,9 +719,17 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--light-color);
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__address-location {
+    text-align: center;
+  }
 }
 
 .footer__address-contact {
+  display: block;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -716,6 +737,12 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-address-contact);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__address-contact {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -729,6 +756,7 @@ img {
   .footer__social {
     margin-top: 0;
     margin-left: 165px;
+    text-align: center;
   }
 }
 
@@ -959,7 +987,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 768px;
     background-size: 768px 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/main/hero_background/table/t_header_1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/main/hero_background/table/t_header_1x.jpg");
@@ -1079,6 +1106,7 @@ img {
 @media screen and (min-width: 768px) {
   .features__list {
     margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
